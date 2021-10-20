@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src=C:\Users\SERGI\Desktop\CFGS\2n\Projecte2\Projecte2\Fitxer1.js></script>
+    <script src=fitxer1.js></script>
 </head>
 
 <body>
