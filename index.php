@@ -37,7 +37,7 @@
             <div class="sidebar2">SIDEBAR2</div>
             <div class="footer">FOOTER</div>
         </div>
-     <footer>
+     <footer class="text-center footer-style">
         <?php 
             include_once('layout/footer.php');
         ?>
