@@ -12,7 +12,7 @@ catch(Exception $e)
 {
 
 //error de conexió
-    die('Erreur : '.$e->getMessage());
+    die('Error : '.$e->getMessage());
        
 }
 
