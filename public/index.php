@@ -37,15 +37,15 @@ $resposta = $contenidor->resposta();
 $peticio = $contenidor->peticio();
 
 if ($r === "admin") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, ctrlAdmin);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
 } elseif ($r === "form") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, ctrlForm);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlForm");
 } elseif ($r === "afegir") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, ctrlAfegir);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAfegir");
 } elseif ($r === "actualitzar") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, ctrlActualitzar);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlActualitzar");
 } elseif ($r === "delete") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, ctrlEsborrar);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlEsborrar");
 } elseif ($r === "identificar") {
     $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
 } elseif ($r === "desar") {
