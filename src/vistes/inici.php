@@ -78,65 +78,7 @@
           </div>
         </div>
       </div>
-
-<!--CODI DANI*****************************************************************************************-->
-<div class="container">
-      <div class="row mt-1 mb-3">
-        <div class="col"><h1>Exemple per veure com funcionen els susaris</h1></div>
-      </div>
-
-      <div class="row mt-1 mb-1">
-        <div class="col"><p><?=$missatge; ?></p></div>
-      </div>
       
-      <div class="row mt-4">
-        <div class="col-3">
-          <div class="list-group">
-            <?php
-            foreach ($llistatImatges as $codi => $actual) {
-                if ($codi == $imatge) {
-                  // és la imatge que estem mostrant!
-                    $css = "active";
-                } else {
-                    $css = "";
-                }
-                ?>
-                <a href="index.php?imatge=<?=$codi;?>" class="list-group-item list-group-item-action <?=$css;?>">
-                  <?=$actual["titol"];?>
-                </a>
-            <?php }?>
-            
-          </div>
-          
-        </div>
-        <div class="col-9">
-            <?php
-            if (!is_null($imatge)) {
-                ?>
-          <img src="img/<?php echo $imatgeActual["url"]; ?>" alt="<?php echo $imatgeActual["titol"]; ?>" class="img-fluid rounded">
-                <?php
-            } else {
-                ?>
-          <div class="alert alert-danger" role="alert">
-            No has escollit cap imatge!
-          </div>
-                <?php
-            }
-            ?>
-        </div>
-      </div>
-      <div class="row mt-5 mb-4">
-        <div class="col">
-          <div class="bg-light border rounded p-3">
-          <h2>M07 - Desenvolupament web entorn servidor</h2>
-          <p>Professor: Dani Prados</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- FINAL CODI DANI*************************************************************************************-->
-
       <div  class="buttoncard">
         <a href="#">Veure tots</a>
       </div>
