@@ -18,7 +18,7 @@ include "../src/config.php";
 
 include "../src/controladors/desar.php";
 include "../src/controladors/identificar.php";
-include "../src/controladors/portada.php";
+include "../src/controladors/inici.php";
 include "../src/controladors/error.php";
 include "../src/controladors/about.php";
 include "../src/controladors/admin.php";
