@@ -1,3 +1,16 @@
+<!--
+
+CODI FRONTEND FORMULARI REGISTRE
+
+<form class="registro" action="" method="post">
+<div><label>Usuario:</label> <input type="text" name="usuario"></div>
+<div><label>Clave:</label> <input type="password" name="password"></div>
+<div><label>Repetir Clave:</label> <input type="password" name="repassword"></div>
+<div><input type="submit" name="enviar" value="Registrar"></div>
+</form>
+-->
+
+<!-- CODI BACKEND FORMULARI REGISTRE -->
 <?php
 if(isset($_POST['enviar'])) { 
     if($_POST['usuario'] == '' or $_POST['password'] == '' or $_POST['repassword'] == '') { 
@@ -11,6 +24,7 @@ if(isset($_POST['enviar'])) {
                 $verificar_usuario = 1; 
             } 
         } 
+
         if($verificar_usuario) { 
             if($_POST['password'] == $_POST['repassword']) { 
                 $usuario = $_POST['usuario']; 

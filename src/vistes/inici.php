@@ -79,10 +79,10 @@
         </div>
       </div>
 
-<!--CODI DANI-->
+<!--CODI DANI*****************************************************************************************-->
 <div class="container">
       <div class="row mt-1 mb-3">
-        <div class="col"><h1>Exemple per veure com funcionen les sessions</h1></div>
+        <div class="col"><h1>Exemple per veure com funcionen els susaris</h1></div>
       </div>
 
       <div class="row mt-1 mb-1">
@@ -101,9 +101,9 @@
                     $css = "";
                 }
                 ?>
-            <a href="index.php?imatge=<?=$codi;?>" class="list-group-item list-group-item-action <?=$css;?>">
-                <?=$actual["titol"];?>
-            </a>
+                <a href="index.php?imatge=<?=$codi;?>" class="list-group-item list-group-item-action <?=$css;?>">
+                  <?=$actual["titol"];?>
+                </a>
             <?php }?>
             
           </div>
@@ -130,12 +130,12 @@
           <div class="bg-light border rounded p-3">
           <h2>M07 - Desenvolupament web entorn servidor</h2>
           <p>Professor: Dani Prados</p>
-          
           </div>
         </div>
       </div>
-
     </div>
+
+    <!-- FINAL CODI DANI*************************************************************************************-->
 
       <div  class="buttoncard">
         <a href="#">Veure tots</a>
