@@ -6,7 +6,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
 
     <body>
@@ -25,13 +27,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="slider/1.jpg" class="d-block w-100" alt="...">
+            <img src="../../public/slider/1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="slider/2.jpg" class="d-block w-100" alt="...">
+            <img src="../../public/slider/2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="slider/3.jpg" class="d-block w-100" alt="...">
+            <img src="../../public/slider/3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -45,7 +47,7 @@
       </div>
       <div class="card-group">
         <div class="card">
-          <img src="slider/3.jpg" class="card-img-top" alt="...">
+          <img src="../../public/slider/3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -55,7 +57,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="slider/4.jpg" class="card-img-top" alt="...">
+          <img src="../../public/slider/4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -65,7 +67,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="slider/4.jpg" class="card-img-top" alt="...">
+          <img src="../../public/slider/4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
