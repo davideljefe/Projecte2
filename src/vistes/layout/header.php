@@ -33,6 +33,7 @@
           </div>
         </div>
       </nav>
+      <?php require_once '../../controladors/registrar.php'?>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -67,34 +68,38 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3">
+              <form class="row g-3" action="header.php" method="post">
+              <div class="col-md-6">
+                  <label for="nom" class="form-label">DNI</label>
+                  <input type="text" class="form-control" id="dni"  name="dni">
+                </div>
                 <div class="col-md-6">
                   <label for="nom" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="nom">
+                  <input type="text" class="form-control" id="nom"  name="nom">
                 </div>
                 <div class="col-md-6">
                   <label for="cognoms" class="form-label">Cognoms</label>
-                  <input type="text" class="form-control" id="cognoms">
+                  <input type="text" class="form-control" id="cognoms"  name="cognom">
                 </div>
                 <div class="col-md-6">
                   <label for="inputEmail3" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="usuari@exemple.com">
+                  <input type="email"  name="correu" class="form-control" id="inputEmail3" placeholder="usuari@exemple.com">
                 </div>
                 <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Contrasenya</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <input type="password" class="form-control" id="inputPassword4"  name="contrasenya">
                 </div>
                 <div class="col-12">
                   <label for="direccio" class="form-label">Direcció</label>
-                  <input type="text" class="form-control" id="direccio" placeholder="C/ Hola mon, 6">
+                  <input type="text" class="form-control" id="direccio" placeholder="C/ Hola mon, 6"  name="contrasenya">
+                </div>
+                <div class="col-md-6">
+                  <label for="telefon" class="form-label">Telefon</label>
+                  <input type="number" id="telefon" class="form-control"  name="telefon">
                 </div>
                 <div class="col-md-6">
                   <label for="ciutat" class="form-label">Ciutat</label>
-                  <input type="text" class="form-control" id="ciutat">
-                </div>
-                <div class="col-md-6">
-                  <label for="cp" class="form-label">CP</label>
-                  <input type="number" id="cp" class="form-control">
+                  <input type="text" class="form-control" id="ciutat"  name="ciutat">
                 </div>
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary">Registrar</button>
