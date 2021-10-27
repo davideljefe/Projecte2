@@ -10,6 +10,7 @@
 
     <title>Exemple d'us de sessions</title>
   </head>
+
   <body>
     <?php include("cap.php"); ?>
     <div class="container">
@@ -39,6 +40,7 @@
             <?php }?>
             
           </div>
+          
         </div>
         <div class="col-9">
             <?php
