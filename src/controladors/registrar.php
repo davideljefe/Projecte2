@@ -1,6 +1,8 @@
 <?php
 require 'initPDO.php';
 
+function ctrlRegistrar($peticio, $resposta, $contenidor))
+{
 if(!empty($_POST['dni']) && !empty($_POST['nom']) && !empty($_POST['cognom']) && !empty($_POST['correu'])
 !empty($_POST['adreca']) && empty($_POST['telefon']) && !empty($_POST['rol']) && empty($_POST['contrasenya'])){
     $sql = "INSERT INTO users (dni, nom, cognom, correu, adreca, telefon, rol, contrasenya) VALUES
@@ -23,5 +25,9 @@ if(!empty($_POST['dni']) && !empty($_POST['nom']) && !empty($_POST['cognom']) &&
         $message = 'Error en la creacio del usuari';
     }
 }
+
+}
+
+
 
 ?>

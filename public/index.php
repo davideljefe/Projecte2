@@ -53,10 +53,12 @@ if ($r === "admin") {
     $resposta = ctrlDesar($peticio, $resposta, $contenidor);
 } elseif ($r === "about") {
     $resposta = ctrlAbout($peticio, $resposta, $contenidor);
+}elseif ($r == "registrar"){
+$resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
 } elseif ($r == "") {
     $resposta = ctrlPortada($peticio, $resposta, $contenidor);
 } else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
-}
+} 
 
 $resposta->resposta();
