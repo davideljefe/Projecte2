@@ -67,7 +67,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3" action="index.php" method="post">
+              <form class="row g-3" action="../../public/index.php" method="post">
               <div class="col-md-6">
                   <label for="nom" class="form-label">DNI</label>
                   <input type="text" class="form-control" id="dni"  name="dni">
