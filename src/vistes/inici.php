@@ -15,7 +15,7 @@
 
         <header>  
          <?php 
-              require_once('layout/header.php');
+              include_once('layout/header.php');
          ?>  
          </header>
 

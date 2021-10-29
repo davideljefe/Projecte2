@@ -33,7 +33,6 @@
           </div>
         </div>
       </nav>
-      <?php require_once '../../controladors/registrar.php'?>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -68,7 +67,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3" action="header.php" method="post">
+              <form class="row g-3" action="index.php" method="post">
               <div class="col-md-6">
                   <label for="nom" class="form-label">DNI</label>
                   <input type="text" class="form-control" id="dni"  name="dni">
