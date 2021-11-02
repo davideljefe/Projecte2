@@ -1,7 +1,7 @@
 <?php
-require 'initPDO.php';
+/*require 'initPDO.php';
 
-function ctrlRegistrar($peticio, $resposta, $contenidor))
+function ctrlRegistrar($peticio, $resposta, $contenidor)
 {
 if(!empty($_POST['dni']) && !empty($_POST['nom']) && !empty($_POST['cognom']) && !empty($_POST['correu'])
 !empty($_POST['adreca']) && empty($_POST['telefon']) && !empty($_POST['rol']) && empty($_POST['contrasenya'])){
@@ -30,4 +30,4 @@ if(!empty($_POST['dni']) && !empty($_POST['nom']) && !empty($_POST['cognom']) &&
 
 
 
-?>
+?>*/
