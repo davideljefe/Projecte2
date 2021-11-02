@@ -54,10 +54,12 @@ if ($r === "admin") {
 } elseif ($r === "about") {
     $resposta = ctrlAbout($peticio, $resposta, $contenidor);
 }elseif ($r == "registrar"){
-$resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
-} elseif ($r == "") {
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
+} elseif ($r == ""){
+    $resposta = ctrlInici($peticio, $resposta, $contenidor);
+}/*elseif ($r == "") {
     $resposta = ctrlPortada($peticio, $resposta, $contenidor);
-} else {
+}*/ else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 } 
 
