@@ -26,7 +26,7 @@ include "../src/controladors/adminForm.php";
 include "../src/controladors/adminAfegir.php";
 include "../src/controladors/adminEsborrar.php";
 include "../src/controladors/adminActualitzar.php";
-include "../src/controladors/registrar.php"
+include "../src/controladors/registrar.php";
 
 include "../src/middleware/middleAdmin.php";
 
