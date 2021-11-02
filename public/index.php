@@ -53,14 +53,16 @@ if ($r === "admin") {
     $resposta = ctrlDesar($peticio, $resposta, $contenidor);
 } elseif ($r === "about") {
     $resposta = ctrlAbout($peticio, $resposta, $contenidor);
-}elseif ($r == "registrar"){
-    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
-} elseif ($r == ""){
-    $resposta = ctrlInici($peticio, $resposta, $contenidor);
-}/*elseif ($r == "") {
+} elseif ($r == "") {
     $resposta = ctrlPortada($peticio, $resposta, $contenidor);
-}*/ else {
+} else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 } 
 
 $resposta->resposta();
+
+/*elseif ($r == "registrar"){
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
+} elseif ($r == ""){
+    $resposta = ctrlInici($peticio, $resposta, $contenidor);
+}*/
