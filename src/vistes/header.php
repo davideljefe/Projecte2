@@ -15,19 +15,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Reserves</a>
               </li>
-            </ul>
-            <ul class="navbar-nav">
               <li class="nav-item">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Login
-              </button>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
+                 <a class="nav-link" href="index.php?r=login">Login</a>
               <li class="nav-item">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                Registrarse
-              </button>
+                <a class="nav-link" href="index.php?r=registrar">Registrar-se</a>
               </li>
             </ul>
           </div>
