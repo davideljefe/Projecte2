@@ -39,30 +39,15 @@ $peticio = $contenidor->peticio();
 
 if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
-} elseif ($r === "form") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlForm");
-} elseif ($r === "afegir") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAfegir");
-} elseif ($r === "actualitzar") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlActualitzar");
-} elseif ($r === "delete") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlEsborrar");
-} elseif ($r === "identificar") {
-    $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
-} elseif ($r === "desar") {
-    $resposta = ctrlDesar($peticio, $resposta, $contenidor);
-} elseif ($r === "about") {
-    $resposta = ctrlAbout($peticio, $resposta, $contenidor);
-} elseif ($r == "") {
-    $resposta = ctrlPortada($peticio, $resposta, $contenidor);
+} elseif ($r == "registrar"){
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
+}elseif ($r == "login"){
+    $resposta = ctrlLogin($peticio, $resposta, $contenidor);
+}elseif ($r == "") {
+    $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 } 
 
 $resposta->resposta();
 
-/*elseif ($r == "registrar"){
-    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
-} elseif ($r == ""){
-    $resposta = ctrlInici($peticio, $resposta, $contenidor);
-}*/

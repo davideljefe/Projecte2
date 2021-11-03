@@ -1,6 +1,6 @@
-<?php
+<!--<?php
 
-try {
+/*try {
 
 //translate database conexio
 $conexio = mysqli_connect("127.0.0.1", "root", "", "translate") or die("Error " . mysqli_error($conexio));
@@ -15,5 +15,6 @@ catch(Exception $e)
     die('Error : '.$e->getMessage());
        
 }
-
+*/
 ?>
+-->
