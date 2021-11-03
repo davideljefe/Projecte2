@@ -14,7 +14,7 @@ try {
     die('Ha fallat la connexió: ' . $e->getMessage());
 }
 
-$sql->query("CREATE TABLE IF NOT EXISTS galeria ( id INT AUTO_INCREMENT PRIMARY KEY, titol VARCHAR(255), url_imatge VARCHAR(255));");
+/*$sql->query("CREATE TABLE IF NOT EXISTS galeria ( id INT AUTO_INCREMENT PRIMARY KEY, titol VARCHAR(255), url_imatge VARCHAR(255));");
 
 
 $imatges = $imatges = [
@@ -31,3 +31,4 @@ $sql->query("delete from galeria;");
 foreach ($imatges as $actual) {
     $q = $sql->prepare("insert into galeria (titol,url_imatge) values (:titol, :url);");
     $q->execute([":titol" => $actual["titol"], ":url" => $actual["url"]]);
+*/

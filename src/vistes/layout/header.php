@@ -67,43 +67,40 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form class="row g-3" action="../../public/index.php" method="post">
+              <form class="row g-3" method="post">
               <div class="col-md-6">
-                  <label for="nom" class="form-label">DNI</label>
-                  <input type="text" class="form-control" id="dni"  name="dni">
+                  <label for="dni" class="form-label">DNI</label>
+                  <input type="text" class="form-control" name="dni">
                 </div>
                 <div class="col-md-6">
                   <label for="nom" class="form-label">Nom</label>
-                  <input type="text" class="form-control" id="nom"  name="nom">
+                  <input type="text" class="form-control"name="nom">
                 </div>
                 <div class="col-md-6">
                   <label for="cognoms" class="form-label">Cognoms</label>
-                  <input type="text" class="form-control" id="cognoms"  name="cognom">
+                  <input type="text" class="form-control" name="cognoms">
                 </div>
                 <div class="col-md-6">
-                  <label for="inputEmail3" class="form-label">Email</label>
-                  <input type="email"  name="correu" class="form-control" id="inputEmail3" placeholder="usuari@exemple.com">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email"  name="email" class="form-control"placeholder="usuari@exemple.com">
                 </div>
                 <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Contrasenya</label>
-                  <input type="password" class="form-control" id="inputPassword4"  name="contrasenya">
+                  <label for="contrasenya" class="form-label">Contrasenya</label>
+                  <input type="password" class="form-control" name="contrasenya">
                 </div>
-                <div class="col-12">
+                <div class="col-md-6">
                   <label for="direccio" class="form-label">Direcció</label>
-                  <input type="text" class="form-control" id="direccio" placeholder="C/ Hola mon, 6"  name="contrasenya">
+                  <input type="text" class="form-control" placeholder="C/ Hola mon, 6"  name="direccio">
                 </div>
                 <div class="col-md-6">
                   <label for="telefon" class="form-label">Telefon</label>
-                  <input type="number" id="telefon" class="form-control"  name="telefon">
-                </div>
-                <div class="col-md-6">
-                  <label for="ciutat" class="form-label">Ciutat</label>
-                  <input type="text" class="form-control" id="ciutat"  name="ciutat">
+                  <input type="number" class="form-control"  name="telefon">
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Registrar</button>
+                  <button type="submit" class="btn btn-primary" name="registrar">Registrar</button>
                 </div>
               </form>
+              <?php require "../../controladors/registrar.php"; ?>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
