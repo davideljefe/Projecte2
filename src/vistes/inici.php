@@ -14,9 +14,7 @@
     <body>
 
         <header>  
-         <?php 
-              include_once('layout/header.php');
-         ?>  
+        <?php include("header.php"); ?> 
          </header>
 
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -85,9 +83,7 @@
          
     
     <footer class="text-center footer-style">
-        <?php 
-            include_once('layout/footer.php');
-        ?>
+        
     </footer>
 
     </body>

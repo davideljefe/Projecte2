@@ -1,72 +1,40 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link type="text/css" rel="stylesheet" href="index.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      
+      <title>Sessió</title>
+    </head>
 
-    <title>Exemple d'us de sessions</title>
-  </head>
-  <body>
-    <?php include("cap.php"); ?>
+    <body>
+    <?php include("header.php"); ?>
     <div class="container">
-      <div class="row mt-5 mb-4">
-        <div class="col"><h1>Exemple per veure com funcionen les sessions</h1></div>
+    <div class="row mt-5 mb-4">
+        <div class="col"><h1>INICIA SESSIÓ</h1></div>
       </div>
-
-            <?php if (isset($error) && $error != "") {?>
-          <div class="alert alert-danger" role="alert">
-                <?=$error;?>
-          </div>
-            <?php }?>
-
-            
       <div class="row justify-content-md-center">
-        <div class="col-4  p-3">
-          <div class="card text-white bg-info mb-3">
-            <div class="card-header">Etapa 3 - Exemple 1 - Sessions</div>
-            <div class="card-body">
-              <h5 class="card-title">Hola!</h5>
-              <p class="card-text">
-                <form action="index.php" method="post">
-                <input type="hidden" name="r" value="desar">
-          
-                  <div class="form-group">
-                    <label for="inputNom">Abans d'entrar que et sembla si em dius el teu nom?</label>
-                    <input name="nom" type="text" class="form-control" id="inputNom" value="<?=$nom;?>" placeholder="El teu nom">
-
-                  </div>
-                  <div class="form-group">
-                    <label for="inputcognom">Cognom *</label>
-                    <input name="cognom" type="text" class="form-control" id="inputCognom" value="<?=$cognom;?>" placeholder="El teu cognom">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Hola!</button>
-                </form>
-              </p>
-            </div>
-          </div>          
-        </div>
-      </div>    
-      <div class="row mt-5 mb-4">
-        <div class="col">
-          <div class="bg-light border rounded p-3">
-          <h2>M07 - Desenvolupament web entorn servidor</h2>
-          <p>Professor: Dani Prados</p>
-          
-          </div>
-        </div>
+      <div class="col-4  p-3">
+      <form action="index.php" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?=$email;?>" >
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya"  value="<?=$contrasenya;?>"  >
+  </div>
+  <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
+</form>
       </div>
-
     </div>
-    
+    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+    
+    </body>
 </html>
