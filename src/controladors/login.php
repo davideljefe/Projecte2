@@ -12,6 +12,10 @@ CODI FRONTEND FORMULARI REGISTRE
 
 <!-- CODI BACKEND FORMULARI REGISTRE -->
 <?php
+
+function ctrlIdentificar($peticio, $resposta, $contenidor)
+{
+    
 if(isset($_POST['enviar'])) { 
     if($_POST['usuario'] == '' or $_POST['password'] == '' or $_POST['repassword'] == '') { 
         echo 'Por favor llene todos los campos.'; 
@@ -40,5 +44,5 @@ if(isset($_POST['enviar'])) {
         } 
     } 
 }
-
+}
 ?>
