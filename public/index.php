@@ -19,13 +19,13 @@ $peticio = $contenidor->peticio();
 
 if ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
-} elseif ($r == "identificar"){
-    $resposta = ctrlIdentifical($peticio, $resposta, $contenidor);
-} elseif ($r == "reserves"){
+}elseif ($r === "identificar") {
+    $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
+}elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
-} else {
+}else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
-} 
+}
 
 $resposta->resposta();
 

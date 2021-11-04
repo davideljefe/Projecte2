@@ -1,37 +1,21 @@
 <?php
 
-/**
-    * Controlador de la pàgina d'identificació.
-    * Exemple per a M07.
-    * @author: Dani Prados dprados@cendrassos.net
-    *
-    * Mostra el formulari d'identificació
-    *
-**/
-
-/**
-  * ctrlIdentificar: Controlador que carrega el formulari d'identificació
-  *
-  * @param $peticio contingut de la petició http.
-  * @param $resposta contingut de la resposta http.
-  *
-**/
 function ctrlIdentificar($peticio, $resposta, $contenidor)
 {
-    $error = $nom = $peticio->get("SESSION", "error");
+    $error = $email = $peticio->get("SESSION", "error");
     $resposta->set("error", $error);
 
-    $nom = $peticio->get("SESSION", "nom");
-    $cognom = $peticio->get("SESSION", "cognom");
-    if (!isset($nom)) {
-        $nom = "";
+    $email = $peticio->get("SESSION", "email");
+    $contrasenya = $peticio->get("SESSION", "contrasenya");
+    if (!isset($email)) {
+        $email = "";
     }
-    if (!isset($cognom)) {
-        $cognom = "";
+    if (!isset($contrasenya)) {
+        $contrasenya = "";
     }
 
-    $resposta->set("nom", $nom);
-    $resposta->set("cognom", $cognom);
+    $resposta->set("email", $email);
+    $resposta->set("contrasenya", $contrasenya);
 
     $resposta->SetTemplate("identificar.php");
     
