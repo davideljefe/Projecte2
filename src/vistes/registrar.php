@@ -1,23 +1,62 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-function ctrlRegistrar($peticio, $resposta, $contenidor)
-{
-    $error = $nom = $peticio->get("SESSION", "error");
-    $resposta->set("error", $error);
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    $nom = $peticio->get("SESSION", "nom");
-    $cognom = $peticio->get("SESSION", "cognom");
-    if (!isset($nom)) {
-        $nom = "";
-    }
-    if (!isset($cognom)) {
-        $cognom = "";
-    }
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    $resposta->set("nom", $nom);
-    $resposta->set("cognom", $cognom);
+      <link type="text/css" rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+      
+      <title>Registarse</title>
+    </head>
 
-    $resposta->SetTemplate("identificar.php");
+    <body>
+    <?php include("header.php"); ?>
+    <div class="container">
+    <div class="row mt-5 mb-4">
+        <div class="col"><h1>REGISTRA'T</h1></div>
+      </div>
+      <div class="row justify-content-md-center">
+      <div class="col-4  p-3">
+      <form class="row g-3" action="index.php" method="post">
+      <div class="col-md-6">
+    <label for="inputnom" class="form-label">Nom</label>
+    <input type="text" class="form-control" id="inputnom" name="nomreg"  value="<?=$nomreg;?>">
+  </div>
+  <div class="col-md-6">
+    <label for="inputcognom" class="form-label">Cognom</label>
+    <input type="text" class="form-control" id="inputcognom" name="cognomreg"  value="<?=$cognomreg;?>">
+  </div>
+  <div class="col-md-6">
+    <label for="inputdni" class="form-label">DNI</label>
+    <input type="text" class="form-control" id="inputdni" name="dni"  value="<?=$dni;?>">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" name="emailreg"  value="<?=$emailreg;?>">
+  </div>
+  <div class="col-md-12">
+    <label for="inputPassword" class="form-label">Contrasenya</label>
+    <input type="password" class="form-control" id="inputPassword" name="passwdreg"  value="<?=$passwdreg;?>">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Adreça</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adreca"  value="<?=$adreca;?>">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" name="buttreg"  value="<?=$buttreg;?>">Registrar-se</button>
+  </div>
+</form>
+      </div>
+    </div>
+    </div>
+<footer>
+  <?php include("footer.php"); ?>
+</footer>
     
-    return $resposta;
-}
+    </body>
+</html>

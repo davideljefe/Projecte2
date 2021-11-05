@@ -5,3 +5,4 @@ function ctrlInici($peticio, $resposta, $contenidor)
 
     return $resposta;
 }
+?>
