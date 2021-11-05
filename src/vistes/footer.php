@@ -40,7 +40,7 @@
           <div class="col-md-4 footer-col">
             <h3>Adreça</h3>
             <div>
-              <p> Carrer Pelai Martínez, 1, <br> 17600 Figueres, Girona</p>
+              <p> Carrer Pelai Martínez, Nº1 <br> 17600 Figueres, Girona</p>
             </div>
           </div>
         </div>
