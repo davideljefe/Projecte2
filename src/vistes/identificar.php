@@ -33,6 +33,8 @@
     <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya"  value="<?=$contrasenya;?>"  >
   </div>
   <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
+  <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>
+
 </form>
       </div>
     </div>
@@ -40,6 +42,5 @@
 <footer>
   <?php include("footer.php"); ?>
 </footer>
-    
     </body>
 </html>

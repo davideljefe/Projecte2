@@ -4,6 +4,7 @@ include "../src/config.php";
 
 
 include "../src/controladors/identificar.php";
+include "../src/controladors/registrar.php";
 include "../src/controladors/inici.php";
 include "../src/controladors/error.php";
 include "../src/controladors/reserves.php";
@@ -23,6 +24,8 @@ if ($r == "") {
     $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
 }elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
+}elseif ($r === "registrar") {
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
 }else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 }
