@@ -8,6 +8,8 @@ include "../src/controladors/registrar.php";
 include "../src/controladors/inici.php";
 include "../src/controladors/error.php";
 include "../src/controladors/reserves.php";
+include "../src/controladors/quisom.php";
+include "../src/controladors/habitacions.php";
 
 include "../src/middleware/middleAdmin.php";
 
@@ -25,7 +27,11 @@ if ($r == "") {
 }elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
 }elseif ($r === "registrar") {
-    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
+    $resposta = ctrlQuisom($peticio, $resposta, $contenidor);
+}elseif ($r === "quisom") {
+    $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
+}elseif ($r === "habitacions") {
+    $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 }else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 }
