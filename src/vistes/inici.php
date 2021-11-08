@@ -18,8 +18,8 @@
     <body>
 
         <header>  
-        <?php include("header.php"); ?> 
-         </header>
+          <?php include("header.php"); ?> 
+        </header>
 
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -83,8 +83,7 @@
       
       <div  class="buttoncard">
         <a href="#">Veure tots</a>
-      </div>
-         
+      </div> 
     
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?>
