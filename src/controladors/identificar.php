@@ -23,13 +23,16 @@ function ctrlIdentificar($peticio, $resposta, $contenidor)
 
     $nom = $peticio->get("SESSION", "nom");
     $contrasenya = $peticio->get("SESSION", "contrasenya");
-    if (!isset($nom)) {
-        $nom = "";
+    
+   /* if (!isset($nom)) {
+        $error;
     }
     if (!isset($contrasenya)) {
-        $contrasenya = "";
-    }
-
+        $error;
+    }*/
+    
+    echo "$error";
+    
     $resposta->set("nom", $nom);
     $resposta->set("contrasenya", $contrasenya);
 
