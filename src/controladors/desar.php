@@ -20,12 +20,12 @@ function ctrlDesar($peticio, $resposta, $contenidor)
 {
 
     $nom = $peticio->get(INPUT_POST, "nom");
-    $cognom = $peticio->get(INPUT_POST, "cognom");
+    $contrasenya = $peticio->get(INPUT_POST, "contrasenya");
 
     $error = false;
     $missatgeError = array();
     $resposta->setSession("nom", "");
-    $resposta->setSession("cognom", "");
+    $resposta->setSession("contrasenya", "");
 
     if ($nom == "") {
         $missatgeError[] =  "No has entrat el nom!";
@@ -34,11 +34,11 @@ function ctrlDesar($peticio, $resposta, $contenidor)
         $resposta->setSession("nom", $nom);
     }
 
-    if ($cognom == "") {
-        $missatgeError[] = "No has entrat el cognom!";
+    if ($contrasenya == "") {
+        $missatgeError[] = "No has entrat la contrasenya";
         $error = true;
     } else {
-        $resposta->setSession("cognom", $cognom);
+        $resposta->setSession("contrasenya", $contrasenya);
     }
     $resposta->setSession("error", implode("<br>\n", $missatgeError));
     $resposta->setCookie("visites", 0, strtotime("+1 month"));

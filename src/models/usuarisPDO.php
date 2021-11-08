@@ -44,9 +44,9 @@ class UsuarisPDO
      */
     public function getUser($user)
     {
-        $query = 'select dni, correu, contrasenya from usuaris where correu=:user;';
+        $query = 'select dni, nom, contrasenya from usuaris where nom=:nom;';
         $stm = $this->sql->prepare($query);
-        $result = $stm->execute([':user' => $user]);
+        $result = $stm->execute([':nom' => $user]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();

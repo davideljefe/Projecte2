@@ -16,25 +16,35 @@
       <header>
       <?php include("header.php"); ?> 
       </header>
-      <div class="col-9">
-          <?php if($logat) { ?>
-                  <h1>Hola <?=$login["correu"]; ?></h1>
-            <?php } else { ?>  
-              <a href="index.php?r=login" class="btn">Login</a>
-          <?php } ?>  
-          </div>
-        
-        <div class="container">
+      <div class="container">
       <div class="row mt-1 mb-3">
-        <div class="col"><h1 >RESERVES</h1></div>
+        <div class="col"><h1 >Exemple MVC</h1></div>
       </div>
+
+      <?php if (isset($error) && $error != "") {?>
+          <div class="alert alert-danger" role="alert">
+                <?=$error;?>
+          </div>
+      <?php }?>
 
       <div class="row mt-1 mb-1">
         <div class="col">
             <p><?=$missatge?></p>
             <hr>
-            <p>SERGAY CUFIDIS</p>
+            <p>HOOLI.</p>
         </div>
+      </div>
+      
+      
+      <div class="row mt-5 mb-4">
+        <div class="col">
+          <div class="bg-light border rounded p-3">
+          <h2>RESERVES</h2>
+          <p>SERGAY CUFIDIS</p>
+          </div>
+        </div>
+      </div>
+
       </div>
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?> 

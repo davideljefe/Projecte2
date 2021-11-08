@@ -20,4 +20,3 @@ require_once "../src/emeset/contenidor.php";
 require_once "../src/models/imatges.php";
 require_once "../src/models/imatgesSQLite.php";
 require_once "../src/models/imatgesPDO.php";
-require_once "../src/models/usuarisPDO.php";

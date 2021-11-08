@@ -23,14 +23,14 @@
       <div class="row justify-content-md-center">
       <div class="col-4  p-3">
       <form action="index.php" method="post">
+      <input type="hidden" name="r" value="desar">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<?=$email;?>" >
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <label for="nom1" class="form-label">Usuari</label>
+    <input type="text" name="nom" class="form-control" id="nom1"  value="<?=$nom;?>" >
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya"  value="<?=$contrasenya;?>"  >
+    <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya"  value="<?=$contrasenya;?>" > 
   </div>
   <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
   <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>
