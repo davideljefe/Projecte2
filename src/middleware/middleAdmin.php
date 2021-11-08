@@ -18,14 +18,12 @@
 **/
 function middleAdmin($peticio, $resposta, $contenidor, $next)
 {
-    $nom = $peticio->get("SESSION", "nom");
-    $cognom = $peticio->get("SESSION", "cognom");
-    $missatge = $peticio->get("SESSION", "missatge");
-    $resposta->set("missatge", $missatge);
+    $login = $peticio->get("SESSION", "identificar");
+    $logat = $peticio->get("SESSION", "logat");
    
 
     /* Validem que nom i cognom estan definits */
-    if ($nom == "" || $cognom == "") {
+    if (!$logat) {
         $resposta->setSession("error", "Has intentat accedir a la pàgina sense identificar-te!!!!!!\n");
         $resposta->redirect("Location:index.php?r=identificar");
     } else {
