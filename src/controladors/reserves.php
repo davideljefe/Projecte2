@@ -1,20 +1,31 @@
 <?php
 
+/**
+    * Controlador de la portada.
+    * Exemple per a M07.
+    * @author: Dani Prados dprados@cendrassos.net
+    *
+    * Carrega la imatge que toca i la visualitza
+    *
+**/
+
+/**
+  * ctrlPortada: Controlador que carrega les tasques i visaulitza la portada
+  *
+  * @param $peticio contingut de la petició http.
+  * @param $resposta contingut de la resposta http.
+  *
+**/
 function ctrlReserves($peticio, $resposta, $contenidor)
 {
 
-    $email = $peticio->get("SESSION", "email");
-    $contrasenya = $peticio->get("SESSION", "contrasenya");
+    $login = $peticio->get("SESSION", "identificar");
+    $logat = $peticio->get("SESSION", "logat");
 
-    if ($email == "" || $contrasenya == "") {
-        $resposta->setSession("error", "Has intentat accedir a la pàgina sense identificar-te!!!!!!\n");
-        $resposta->redirect("Location:index.php?r=identificar");
-    }
+    $resposta->set("logat", $logat);
+    $resposta->set("login", $login);
 
-    
     $resposta->SetTemplate("reserves.php");
 
     return $resposta;
 }
-
-?>
