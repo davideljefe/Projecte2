@@ -12,6 +12,7 @@ include "../src/controladors/quisom.php";
 include "../src/controladors/habitacions.php";
 include "../src/controladors/admin.php";
 include "../src/controladors/desar.php";
+include "../src/controladors/llista.php";
 
 include "../src/middleware/middleAdmin.php";
 
@@ -38,7 +39,11 @@ if ($r === "admin") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 }elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
-}elseif ($r == "") {
+}
+elseif ($r === "llista") {
+    $resposta = ctrlLlista($peticio, $resposta, $contenidor);
+}
+elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
