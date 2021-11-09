@@ -36,7 +36,9 @@ if ($r === "admin") {
     $resposta = ctrlQuisom($peticio, $resposta, $contenidor);
 }elseif ($r === "habitacions") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
-} elseif ($r == "") {
+}elseif ($r === "inici") {
+    $resposta = ctrlInici($peticio, $resposta, $contenidor);
+}elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);

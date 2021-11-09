@@ -15,30 +15,38 @@
     </head>
 
     <body>
-    <?php include("header.php"); ?>
-    <div class="container">
-    <div class="row mt-5 mb-4">
-        <div class="col"><h1>INICIA SESSIÓ</h1></div>
-      </div>
-      <div class="row justify-content-md-center">
-      <div class="col-4  p-3">
-      <form action="index.php" method="post">
-      <input type="hidden" name="r" value="desar">
-  <div class="mb-3">
-    <label for="nom1" class="form-label">Usuari</label>
-    <input type="text" name="nom" class="form-control" id="nom1"  value="<?=$nom;?>" >
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya"  value="<?=$contrasenya;?>" > 
-  </div>
-  <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
-  <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>
+      
+<?php include("header.php"); ?>
 
-</form>
-      </div>
+<div class="container">
+        <div class="row mt-5 mb-4">
+            <div class="col"><h1>INICIA SESSIÓ</h1></div>
+        </div>
+    <div class="row justify-content-md-center">
+        <div class="col-4  p-3">
+            <form action="index.php" method="post">
+                    <input type="hidden" name="r" value="desar">
+                  <div class="mb-3">
+                      <label for="nom1" class="form-label">Usuari</label>
+                      <input type="text" name="nom" class="form-control" id="nom1"  value="<?=$nom;?>" >
+                  </div>
+                  <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya" value="<?=$contrasenya;?>" >
+                  </div>
+                    <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
+                    <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>
+            </form>
+        </div>
     </div>
+</div>
+
+<?php if (isset($error) && $error != "") {?>
+    <div class="alert alert-danger" role="alert">
+          <?=$error;?>
     </div>
+<?php }?>
+
 <footer>
   <?php include("footer.php"); ?>
 </footer>
