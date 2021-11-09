@@ -17,6 +17,9 @@
                 <a class="nav-link" href="index.php?r=quisom">Qui Sóm?</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="index.php?r=llista">Llista</a>
+              </li>
+              <li class="nav-item">
                  <a class="nav-link" href="index.php?r=identificar">Login</a>
               <li class="nav-item">
                 <a class="nav-link" href="index.php?r=registrar">Registrar-se</a>
