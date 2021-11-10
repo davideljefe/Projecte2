@@ -26,8 +26,8 @@ class UsuarisPDO
     public function __construct($config)
     {
         $dsn = "mysql:dbname={$config['dbname']};host={$config['host']}";
-        $usuari = $config['user'];
-        $clau = $config['pass'];
+        $usuari = $config['nom'];
+        $clau = $config['contrasenya'];
 
         try {
             $this->sql = new \PDO($dsn, $usuari, $clau);

@@ -25,7 +25,7 @@
     <div class="row justify-content-md-center">
         <div class="col-4  p-3">
             <form action="index.php" method="post">
-                    <input type="hidden" name="r" value="desar">
+                    <input type="hidden" name="r" value="dologin">
                   <div class="mb-3">
                       <label for="nom1" class="form-label">Usuari</label>
                       <input type="text" name="nom" class="form-control" id="nom1"  value="<?=$nom;?>" >
