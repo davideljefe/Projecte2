@@ -33,7 +33,7 @@
   </div>
   <div class="col-md-6">
     <label for="inputdni" class="form-label">DNI</label>
-    <input type="text" class="form-control" id="inputdni" name="dni"  value="<?=$dni;?>">
+    <input type="text" class="form-control" placeholder="Ex. 12345678H" id="inputdni" name="dnireg"  value="<?=$dni;?>">
   </div>
   <div class="col-md-6">
     <label for="inputEmail" class="form-label">Email</label>
@@ -45,7 +45,7 @@
   </div>
   <div class="col-12">
     <label for="inputAddress" class="form-label">Adreça</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adreca"  value="<?=$adreca;?>">
+    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg"  value="<?=$adreca;?>">
   </div>
   <div class="col-12">
     <button type="submit" class="btn btn-primary" name="buttreg"  value="<?=$buttreg;?>">Registrar-se</button>
