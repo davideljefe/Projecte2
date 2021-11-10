@@ -1,7 +1,7 @@
 <?php
-function ctrlInici($peticio, $resposta, $contenidor)
+function ctrlLlista($peticio, $resposta, $contenidor)
 {
-    $resposta->SetTemplate("llista.php");
+    $resposta->SetTemplate("llistausuaris.php");
 
     return $resposta;
 }

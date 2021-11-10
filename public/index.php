@@ -9,6 +9,7 @@ include "../src/controladors/inici.php";
 include "../src/controladors/error.php";
 include "../src/controladors/reserves.php";
 include "../src/controladors/quisom.php";
+include "../src/controladors/dologin.php";
 include "../src/controladors/habitacions.php";
 include "../src/controladors/admin.php";
 include "../src/controladors/desar.php";
@@ -25,7 +26,9 @@ $peticio = $contenidor->peticio();
 
 if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
-} elseif ($r === "identificar") {
+} elseif ($r === "dologin") {
+    $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
+}elseif ($r === "identificar") {
     $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
 }elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
@@ -39,8 +42,7 @@ if ($r === "admin") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 }elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
-}
-elseif ($r === "llista") {
+} elseif ($r === "llista") {
     $resposta = ctrlLlista($peticio, $resposta, $contenidor);
 }
 elseif ($r == "") {
