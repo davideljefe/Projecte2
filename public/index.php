@@ -33,7 +33,7 @@ if ($r === "admin") {
 }elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
 }elseif ($r === "registrar") {
-    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor, $nomreg, $cognomreg, $dnireg, $emailreg, $passwordreg, $adrecareg);
 } elseif ($r === "desar") {
     $resposta = ctrlDesar($peticio, $resposta, $contenidor);
 } elseif ($r === "quisom") {

@@ -16,13 +16,14 @@
 
     <body>
     <?php include("header.php"); ?>
+    <?php echo "Hola " . $nomreg . ", benvingut"; ?>
     <div class="container">
     <div class="row mt-5 mb-4">
         <div class="col"><h1>REGISTRA'T</h1></div>
       </div>
       <div class="row justify-content-md-center">
       <div class="col-4  p-3">
-      <form class="row g-3" action="index.php" method="post">
+      <form method="POST" class="row g-3" action="index.php" >
       <div class="col-md-6">
     <label for="inputnom" class="form-label">Nom</label>
     <input type="text" class="form-control" id="inputnom" name="nomreg"  value="<?=$nomreg;?>">
@@ -48,7 +49,7 @@
     <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg"  value="<?=$adreca;?>">
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary" name="buttreg"  value="<?=$buttreg;?>">Registrar-se</button>
+    <button type="submit" class="btn btn-primary" value="<?=$buttreg;?>">Registrar-se</button>
   </div>
 </form>
       </div>
