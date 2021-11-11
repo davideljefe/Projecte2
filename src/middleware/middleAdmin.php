@@ -18,7 +18,6 @@
 **/
 function middleAdmin($peticio, $resposta, $contenidor, $next)
 {
-
     $login = $peticio->get("SESSION", "identificar");
     $logat = $peticio->get("SESSION", "logat");
 

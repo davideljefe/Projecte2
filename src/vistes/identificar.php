@@ -24,17 +24,17 @@
         </div>
     <div class="row justify-content-md-center">
         <div class="col-4  p-3">
-            <form action="index.php" method="post">
-                    <input type="hidden" name="r" value="dologin">
+            <form action="index.php" method="POST">
+                    <input name="r" type="hidden" value="dologin">
                   <div class="mb-3">
                       <label for="nom1" class="form-label">Usuari</label>
                       <input type="text" name="user" class="form-control" id="nom1">
                   </div>
                   <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+                      <input type="password" name="pass" class="form-control" id="exampleInputPassword1">
                   </div>
-                    <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
+                    <button type="submit"  name="iniciar" class="btn btn-primary">Inicia Sessió</button>
                     <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>
             </form>
         </div>
