@@ -8,13 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Exemple d'us de sessions</title>
+    <title>Usuaris</title>
   </head>
   <body>
     <?php include("cap.php"); ?>
     <div class="container">
       <div class="row mt-1 mb-3">
-        <div class="col"><h1>Exemple per veure com funcionen les sessions</h1></div>
+        <div class="col"><h1>LListat d'Usuaris</h1></div>
       </div>
 
         <?php
@@ -30,15 +30,6 @@
             <a href="index.php?r=form" class="btn btn-danger">Afegir</a>
           </div>
           <div class="col">
-            
-            <form class="form-inline" action="index.php">
-              <input type="hidden" name="r" value="admin">
-              <div class="form-group mx-sm-3 mb-2">
-                <label for="inputCerca2" class="sr-only">Cerca</label>
-                <input type="text" name="cerca" class="form-control" id="inputCerc2" value="<?=$cerca?>" placeholder="Cerca">
-              </div>
-              <button type="submit" class="btn btn-primary mb-2">Cerca</button>
-            </form>
           </div>
         </div>      
 
@@ -51,11 +42,13 @@
                     ?>  
               <table class="table">
                 <tr>
-                    <th>#</th>
-                    <th>Codi</th>
-                    <th>Títol</th>
-                    <th>Url</th>
-                    <th></th>
+                    <th>Nom</th>
+                    <th>Cognom</th>
+                    <th>Correu</th>
+                    <th>Adreça</th>
+                    <th>Telèfon</th>
+                    <th>Rol</th>
+                    <th>Contrasenya</th>
                 </tr>
                 
                     <?php

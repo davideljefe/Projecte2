@@ -2,14 +2,14 @@
 
 function ctrldoLogin($peticio, $resposta, $contenidor)
 {
-    $nom = $peticio->get(INPUT_POST, "nom");
-    $contrasenya = $peticio->get(INPUT_POST, "contrasenya");
+    $usuari = $peticio->get(INPUT_POST, "user");
+    $pass = $peticio->get(INPUT_POST, "pass");
 
     $usuaris = new \Daw\UsuarisPDO($contenidor->config["db"]);;
 
     $actual = $usuaris->getUser($usuari);
 
-    if($actual && $actual["contrasenya"] === $contrasenya) {
+    if($actual && $actual["pass"] === $pass) {
         $resposta->setSession("logat", true);
         $resposta->setSession("identificar", $actual);
         $resposta->redirect("location: index.php");
