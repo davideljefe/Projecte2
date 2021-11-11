@@ -28,24 +28,23 @@ if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
 } elseif ($r === "dologin") {
     $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
-}elseif ($r === "identificar") {
+} elseif ($r === "identificar") {
     $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
-}elseif ($r === "reserves") {
+} elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
-}elseif ($r === "registrar") {
+} elseif ($r === "registrar") {
     $resposta = ctrlRegistrar($peticio, $resposta, $contenidor, $nomreg, $cognomreg, $dnireg, $emailreg, $passwordreg, $adrecareg);
 } elseif ($r === "desar") {
     $resposta = ctrlDesar($peticio, $resposta, $contenidor);
 } elseif ($r === "quisom") {
     $resposta = ctrlQuisom($peticio, $resposta, $contenidor);
-}elseif ($r === "habitacions") {
+} elseif ($r === "habitacions") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
-}elseif ($r === "inici") {
+} elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "llista") {
     $resposta = ctrlLlista($peticio, $resposta, $contenidor);
-}
-elseif ($r == "") {
+} elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
