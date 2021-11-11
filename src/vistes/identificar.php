@@ -28,11 +28,11 @@
                     <input type="hidden" name="r" value="dologin">
                   <div class="mb-3">
                       <label for="nom1" class="form-label">Usuari</label>
-                      <input type="text" name="nom" class="form-control" id="nom1"  value="<?=$nom;?>" >
+                      <input type="text" name="user" class="form-control" id="nom1">
                   </div>
                   <div class="mb-3">
                       <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" name="contrasenya" value="<?=$contrasenya;?>" >
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
                   </div>
                     <button type="submit"  name="iniciar" value="<?=$iniciar;?>" class="btn btn-primary">Inicia Sessió</button>
                     <a href="index.php?r=registrar"><input type="button" value="Registre"  class="btn btn-primary"></a>

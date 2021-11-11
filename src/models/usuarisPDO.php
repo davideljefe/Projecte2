@@ -26,8 +26,8 @@ class UsuarisPDO
     public function __construct($config)
     {
         $dsn = "mysql:dbname={$config['dbname']};host={$config['host']}";
-        $usuari = $config['nom'];
-        $clau = $config['contrasenya'];
+        $usuari = $config['user'];
+        $clau = $config['pass'];
 
         try {
             $this->sql = new \PDO($dsn, $usuari, $clau);
@@ -44,9 +44,9 @@ class UsuarisPDO
      */
     public function getUser($user)
     {
-        $query = 'select dni, nom, contrasenya from usuaris where nom=:nom;';
+        $query = 'select dni, nom, contrasenya from usuaris where nom=:user;';
         $stm = $this->sql->prepare($query);
-        $result = $stm->execute([':nom' => $user]);
+        $result = $stm->execute([':user' => $user]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();

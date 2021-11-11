@@ -19,12 +19,17 @@
 function ctrlAdmin($peticio, $resposta, $contenidor)
 {
 
+    $missatge = $peticio->get("SESSION", "missatge");
+    $resposta->set("missatge", $missatge);
+    $imatges = $contenidor->imatges();
+
     $login = $peticio->get("SESSION", "login");
     $logat = $peticio->get("SESSION", "logat");
 
     $resposta->set("logat", $logat);
     $resposta->set("login", $login);
 
+    $resposta->setSession("missatge", null);
     $resposta->SetTemplate("inici.php");
 
     return $resposta;
