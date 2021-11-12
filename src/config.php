@@ -4,8 +4,8 @@ $config = array();
 
 /* configuració de connexió a la base dades */
 $config["db"] = array();
-$config["db"]["user"] = 'sergi';
-$config["db"]["pass"] = 'daw-2020';
+$config["db"]["user"] = 'pma';
+$config["db"]["pass"] = 'hotelabp';
 $config["db"]["dbname"] = 'hotelabp_db';
 $config["db"]["host"] = 'localhost';
 

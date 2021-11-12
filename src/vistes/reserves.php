@@ -25,6 +25,13 @@
     <header>
         <?php include("header.php"); ?> 
     </header>
+    <div class="col-9">
+          <?php if($logat) { ?>
+                  <h1>Hola <?=$identificar["usuari"]; ?></h1>
+            <?php } else { ?>  
+              <a href="index.php?r=identificar" class="btn">Login</a>
+          <?php } ?>  
+          </div>
     <div class="container">
           <div style="margin-top: 10px;" class="col">
               <p><?=$missatge?></p>
