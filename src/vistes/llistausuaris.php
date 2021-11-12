@@ -35,31 +35,20 @@ include "../../cli/initPDO.php";
             <th>ROL</th>
             <th>ACCIONS</th>
           </tr>
-          <?php
-            $query = mysqli_query($sql "SELECT dni, nom, cognom, correu, adreca, telefon, rol FROM usuaris;");
-            $result = mysqli_num_rows($query);
-            if($result > 0){
-              while($data = mysqli_fetch_array($query)){
-          ?>
           <tr>
-            <td><?php echo $data["dni"]; ?></td>
-            <td><?php echo $data["nom"]; ?></td>
-            <td><?php echo $data["cognom"]; ?></td>
-            <td><?php echo $data["correu"]; ?></td>
-            <td><?php echo $data["adreca"]; ?></td>
-            <td><?php echo $data["telefon"]; ?></td>
-            <td><?php echo $data["rol"]; ?></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>
               <a class="edit" href="#">Editar</a>
               |
               <a class="delete" href="#">Eliminar</a>
             </td>
           </tr>
-          <?php
-              }
-            }
-            ?>
-          
         </table>
       </div>
     </div>

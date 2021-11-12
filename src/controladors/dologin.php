@@ -9,13 +9,15 @@ function ctrldoLogin($peticio, $resposta, $contenidor)
 
     $actual = $usuaris->getUser($usuari);
 
-    if($actual && $actual["pass"] === $pass) {
+    if($actual && $actual["contrasenya"] === $pass) {
         $resposta->setSession("logat", true);
         $resposta->setSession("identificar", $actual);
         $resposta->redirect("location: index.php");
     } else {
         $resposta->setSession("logat", false);
         $resposta->redirect("location: index.php?r=identificar");
+       // $resposta->;
     }
+
     return $resposta;
 }
