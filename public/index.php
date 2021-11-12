@@ -12,7 +12,6 @@ include "../src/controladors/quisom.php";
 include "../src/controladors/dologin.php";
 include "../src/controladors/habitacions.php";
 include "../src/controladors/admin.php";
-include "../src/controladors/desar.php";
 include "../src/controladors/llista.php";
 
 include "../src/middleware/middleAdmin.php";
@@ -24,8 +23,8 @@ $contenidor = new Emeset\Contenidor($config);
 $resposta = $contenidor->resposta();
 $peticio = $contenidor->peticio();
 
-if ($r === "admin") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
+if ($r == "") {
+    $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "dologin") {
     $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
 } elseif ($r === "identificar") {
@@ -34,9 +33,7 @@ if ($r === "admin") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
 } elseif ($r === "registrar") {
     $resposta = ctrlRegistrar($peticio, $resposta, $contenidor, $nomreg, $cognomreg, $dnireg, $emailreg, $passwordreg, $adrecareg);
-} elseif ($r === "desar") {
-    $resposta = ctrlDesar($peticio, $resposta, $contenidor);
-} elseif ($r === "quisom") {
+}elseif ($r === "quisom") {
     $resposta = ctrlQuisom($peticio, $resposta, $contenidor);
 } elseif ($r === "habitacions") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
@@ -44,9 +41,7 @@ if ($r === "admin") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "llista") {
     $resposta = ctrlLlista($peticio, $resposta, $contenidor);
-} elseif ($r == "") {
-    $resposta = ctrlInici($peticio, $resposta, $contenidor);
-} else {
+}  else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 }
 
