@@ -54,7 +54,7 @@ class UsuarisPDO
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
         
-        return $stm->fetch(\PDO::FETCH_ASSOC);
+        print_r()$stm->fetch(\PDO::FETCH_ASSOC);
     }
 
   
