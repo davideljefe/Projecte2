@@ -30,7 +30,8 @@ function ctrlAdmin($peticio, $resposta, $contenidor)
     $resposta->set("login", $login);
 
     $resposta->setSession("missatge", null);
-    $resposta->SetTemplate("inici.php");
+    echo "admin";
+//    $resposta->SetTemplate("inici.php");
 
     return $resposta;
 }

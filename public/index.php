@@ -23,7 +23,9 @@ $contenidor = new Emeset\Contenidor($config);
 $resposta = $contenidor->resposta();
 $peticio = $contenidor->peticio();
 
-if ($r == "") {
+if ($r === "admin") {
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
+}elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "dologin") {
     $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
@@ -32,7 +34,7 @@ if ($r == "") {
 } elseif ($r === "reserves") {
     $resposta = ctrlReserves($peticio, $resposta, $contenidor);
 } elseif ($r === "registrar") {
-    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor, $nomreg, $cognomreg, $dnireg, $emailreg, $passwordreg, $adrecareg);
+    $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
 }elseif ($r === "quisom") {
     $resposta = ctrlQuisom($peticio, $resposta, $contenidor);
 } elseif ($r === "habitacions") {
