@@ -26,30 +26,30 @@
       <form method="POST" class="row g-3" action="index.php" >
       <div class="col-md-6">
     <label for="inputnom" class="form-label">Nom</label>
-    <input type="text" class="form-control" id="inputnom" name="nomreg"  value="<?=$nomreg;?>">
+    <input type="text" class="form-control" id="inputnom" name="nomreg">
   </div>
   <div class="col-md-6">
     <label for="inputcognom" class="form-label">Cognom</label>
-    <input type="text" class="form-control" id="inputcognom" name="cognomreg"  value="<?=$cognomreg;?>">
+    <input type="text" class="form-control" id="inputcognom" name="cognomreg">
   </div>
   <div class="col-md-6">
     <label for="inputdni" class="form-label">DNI</label>
-    <input type="text" class="form-control" placeholder="Ex. 12345678H" id="inputdni" name="dnireg"  value="<?=$dni;?>">
+    <input type="text" class="form-control" placeholder="Ex. 12345678H" id="inputdni" name="dnireg">
   </div>
   <div class="col-md-6">
     <label for="inputEmail" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail" name="emailreg"  value="<?=$emailreg;?>">
+    <input type="email" class="form-control" id="inputEmail" name="emailreg">
   </div>
   <div class="col-md-12">
     <label for="inputPassword" class="form-label">Contrasenya</label>
-    <input type="password" class="form-control" id="inputPassword" name="passwdreg"  value="<?=$passwdreg;?>">
+    <input type="password" class="form-control" id="inputPassword" name="passreg">
   </div>
   <div class="col-12">
     <label for="inputAddress" class="form-label">Adreça</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg"  value="<?=$adreca;?>">
+    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg">
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary" value="<?=$buttreg;?>">Registrar-se</button>
+    <button type="submit" class="btn btn-primary">Registrar-se</button>
   </div>
 </form>
       </div>

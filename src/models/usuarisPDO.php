@@ -57,5 +57,20 @@ class UsuarisPDO
         return $stm->fetch(\PDO::FETCH_ASSOC);
     }
 
+    public function add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $telefonreg)
+    {
+        $query = "insert into usuaris (dni, nom, cognom, correu, adreca, telefon, contrasenya) values 
+        (:dnireg, :nomreg, :cognomreg, :correureg, :adrecareg, :telefonreg, :passreg);";
+        $stm = $this->sql->prepare($query);
+        $stm->execute([":dnireg" => $dnireg, ":nomreg" => $nomreg, ":cognomreg" => $cognomreg, ":emailreg" => $emailreg, 
+        ":adrecareg" => $adrecareg,":telefonreg" => $telefonreg, ":passreg" => $passreg]);
+
+        if ($stm->errorCode() !== '00000') {
+            $err = $stm->errorInfo();
+            $code = $stm->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+    }
+
   
 }
