@@ -57,10 +57,10 @@ class UsuarisPDO
         return $stm->fetch(\PDO::FETCH_ASSOC);
     }
 
-    public function add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $telefonreg)
+    public function add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $telefonreg, $passreg)
     {
         $query = "insert into usuaris (dni, nom, cognom, correu, adreca, telefon, contrasenya) values 
-        (:dnireg, :nomreg, :cognomreg, :correureg, :adrecareg, :telefonreg, :passreg);";
+        (:dnireg, :nomreg, :cognomreg, :emailreg, :adrecareg, :telefonreg, :passreg);";
         $stm = $this->sql->prepare($query);
         $stm->execute([":dnireg" => $dnireg, ":nomreg" => $nomreg, ":cognomreg" => $cognomreg, ":emailreg" => $emailreg, 
         ":adrecareg" => $adrecareg,":telefonreg" => $telefonreg, ":passreg" => $passreg]);
@@ -70,6 +70,22 @@ class UsuarisPDO
             $code = $stm->errorCode();
             die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
         }
+    }
+
+    public function llistat()
+    {
+        $query = "select dni, nom, cognom, correu, adreca, telefon, rol from usuaris;";
+        $llistatus = array();
+        foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $usuari) {
+            $llistatus[$usuari["dni"]] = $usuari;
+        }
+
+        if ($this->sql->errorCode() !== '00000') {
+            $err = $this->sql->errorInfo();
+            $code = $this->sql->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+        return $llistatus;
     }
 
   
