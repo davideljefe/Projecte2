@@ -29,13 +29,25 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="slider/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Benvinguts a l'Hotel ABP</h2>
+              <p>Si busques un lloc per desconnectar has acertat.</p>
+            </div>
+            <img src="img/6.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="slider/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Benvinguts a l'Hotel ABP</h2>
+              <p>Si busques un lloc per desconnectar has acertat.</p>
+            </div>
+            <img src="img/2.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="slider/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Benvinguts a l'Hotel ABP</h2>
+              <p>Si busques un lloc per desconnectar has acertat.</p>
+            </div>
+            <img src="img/3.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -50,7 +62,7 @@
 
       <div class="card-group">
         <div class="card">
-          <img src="slider/3.jpg" class="card-img-top" alt="...">
+          <img src="img/3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -60,7 +72,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="slider/4.jpg" class="card-img-top" alt="...">
+          <img src="img/4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -70,7 +82,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="slider/4.jpg" class="card-img-top" alt="...">
+          <img src="img/6.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>

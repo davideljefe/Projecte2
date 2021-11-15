@@ -21,7 +21,7 @@
     </header>
 <br>
 
-<h1 style="margin-left: 15px;">QUI SOM?</h1>
+<h1 style="margin-left: 15px;">QUI SÓM</h1>
 
 <br>
 
