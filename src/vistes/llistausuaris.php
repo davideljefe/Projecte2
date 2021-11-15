@@ -35,20 +35,24 @@ include "../../cli/initPDO.php";
             <th>ROL</th>
             <th>ACCIONS</th>
           </tr>
+          <?php
+            foreach ($llistatUsuaris as $codi => $actual) {
+          ?>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><?php echo $actual["dni"]; ?></td>
+            <td><?php echo $actual["nom"]; ?></td>
+            <td><?php echo $actual["cognom"]; ?></td>
+            <td><?php echo $actual["correu"]; ?></td>
+            <td><?php echo $actual["adreca"]; ?></td>
+            <td><?php echo $actual["telefon"]; ?></td>
+            <td><?php echo $actual["rol"]; ?></td>
             <td>
               <a class="edit" href="#">Editar</a>
               |
               <a class="delete" href="#">Eliminar</a>
             </td>
           </tr>
+          <?php } ?>
         </table>
       </div>
     </div>

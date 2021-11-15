@@ -43,5 +43,8 @@ class Contenidor
     public function imatges(){
         return new \Daw\ImatgesSQLite($this->config["sqlite"]);;
     }
+    public function usuaris(){
+        return new \Daw\UsuarisPDO($this->config["db"]);;
+    }
 
 }
