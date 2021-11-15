@@ -27,48 +27,48 @@
   <div class="card bg-dark text-white">
     <img src="img/1.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 510</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 510</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 
   <div class="card bg-dark text-white">
     <img src="img/2.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 511</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 511</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 
   <div class="card bg-dark text-white">
     <img src="img/3.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 512</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 512</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 
   <div class="card bg-dark text-white">
     <img src="img/4.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 513</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 513</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 
    <div class="card bg-dark text-white">
     <img src="img/5.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 514</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 514</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 
    <div class="card bg-dark text-white">
     <img src="img/6.jpg" class="card-img">
     <div class="card-img-overlay">
-      <h3 class="card-title">Habitació 515</h3>
-      <p class="card-text">Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</p>
+      <h3 class="card-title"><b>Habitació 515</b></h3>
+      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
     </div>
   </div>
 </div>
