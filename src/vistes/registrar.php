@@ -16,7 +16,6 @@
 
     <body>
     <?php include("header.php"); ?>
-    <?php echo "Hola " . $nomreg . ", benvingut"; ?>
     <div class="container">
     <div class="row mt-5 mb-4">
         <div class="col"><h1>REGISTRA'T</h1></div>
@@ -24,6 +23,7 @@
       <div class="row justify-content-md-center">
       <div class="col-4  p-3">
       <form method="POST" class="row g-3" action="index.php" >
+      <input name="r" type="hidden" value="afegir">
       <div class="col-md-6">
     <label for="inputnom" class="form-label">Nom</label>
     <input type="text" class="form-control" id="inputnom" name="nomreg">

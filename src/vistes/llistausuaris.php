@@ -1,6 +1,4 @@
-<?php
-include "../../cli/initPDO.php";
-?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,6 +22,9 @@ include "../../cli/initPDO.php";
         <div class="col"><h1>LLISTA DELS USUARIS</h1></div>
       </div>
       <div>
+      <?php
+          if (count($llistatUsuaris) > 0) {
+        ?>  
         <table>
           <tr>
             <th>DNI</th>
@@ -31,8 +32,6 @@ include "../../cli/initPDO.php";
             <th>COGNOM</th>
             <th>CORREU</th>
             <th>ADREÇA</th>
-            <th>TELEFON</th>
-            <th>ROL</th>
             <th>ACCIONS</th>
           </tr>
           <?php
@@ -44,8 +43,6 @@ include "../../cli/initPDO.php";
             <td><?php echo $actual["cognom"]; ?></td>
             <td><?php echo $actual["correu"]; ?></td>
             <td><?php echo $actual["adreca"]; ?></td>
-            <td><?php echo $actual["telefon"]; ?></td>
-            <td><?php echo $actual["rol"]; ?></td>
             <td>
               <a class="edit" href="#">Editar</a>
               |
@@ -54,6 +51,7 @@ include "../../cli/initPDO.php";
           </tr>
           <?php } ?>
         </table>
+      <?php } ?>
       </div>
     </div>
 <footer>
