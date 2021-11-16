@@ -102,5 +102,18 @@ class UsuarisPDO
         }
     }
 
+    public function update($dni, $nom, $cognom, $adreca, $correu)
+    {
+        $query = "update usuaris set dni = :dni, nom = :nom, cognom = :cognom, adreca = :adreca, correu = :correu,  where dni=:dni;";
+        $stm = $this->sql->prepare($query);
+        $stm->execute([":dni" => $dni, ":nom" => $nom, ":cognom" => $cognom, ":adreca" => $adreca, ":correu" => $correu,]);
+
+        if ($stm->errorCode() !== '00000') {
+            $err = $stm->errorInfo();
+            $code = $stm->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+    }
+
   
 }

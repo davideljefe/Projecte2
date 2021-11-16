@@ -44,7 +44,7 @@
             <td><?php echo $actual["correu"]; ?></td>
             <td><?php echo $actual["adreca"]; ?></td>
             <td>
-              <a class="edit" href="#">Editar</a>
+              <a class="edit" href="index.php?r=actualitzar&amp;codi=<?php echo $actual["dni"]; ?>">Editar</a>
               |
               <a class="delete" href="index.php?r=delete&amp;codi=<?php echo $actual["dni"]; ?>">Eliminar</a>
             </td>
