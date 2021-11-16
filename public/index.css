@@ -40,3 +40,14 @@ table td{
   margin-top: 15px;
   margin-left: 15px;
 }
+
+.jumbotron {
+background: #358CCE;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}

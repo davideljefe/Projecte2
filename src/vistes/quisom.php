@@ -25,23 +25,21 @@
 
 <br>
 
-<p style="margin-right: 200px; text-align: left; margin-left: 15px;">ABP és un hotel de tres estrelles situat a Figueres, la capital de l'Alt Empordà. En el nostre hotel hi podreu trobar allotjament per un preu econòmic durant totes les èpoques de l'any. Figueres és també la capital de la costa brava, un racó de Catalunya on hi ha un munt d'activitats per fer i llocs per predre's i visitar. Podeu consultar la web oficial de la <a href="https://ca.costabrava.org/"> Costa Brava</a> per a més informació.</p>
+<p style="margin-right: 15px; text-align: justify; margin-left: 15px;">ABP és grup d'estudiants amb una idea de negoci format al 20121. Hem aconseguit obrir un hotel de tres estrelles situat a Figueres, la capital de l'Alt Empordà. En el nostre hotel hi podreu trobar allotjament per un preu econòmic durant totes les èpoques de l'any. El grup ABP sóm un projecte que acaba de néixer i amb molts plans de futur, però per ara només tenim aquest hotel però al nostra idea és expandir-nos a altres pobles i ciutats de Catalunya.</p>
 <br>
-<div style="margin-bottom: 50px">
-<figure>
-<img src="img/costa_brava.jpg" width="490px" height="318px">
-<figcaption >Platja de la Gola a Llançà, Costa Brava.</figcaption>
-</figure>
-</div>
 
 <div style="text-align: center; margin-bottom: 50px">
 <h3 style="margin-bottom: 20px;">On trobar-nos?</h3>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.2255688067917!2d2.962496514957594!3d42.27370804854392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba8dd91251e3ff%3A0xe8dfb11cd9cdef78!2sInstitut%20Cendrassos!5e0!3m2!1ses!2ses!4v1636394894652!5m2!1ses!2ses" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
-    <footer class="text-center footer-style">
-        <?php include("../src/vistes/footer.php"); ?>
-    </footer>
+<div style="text-align: center; margin-bottom: 50px">
+<h3 style="margin-bottom: 20px;">Contacta</h3>
+
+
+<footer class="text-center footer-style">
+	<?php include("../src/vistes/footer.php"); ?>
+</footer>
 
 </body>
 
