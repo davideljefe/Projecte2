@@ -57,13 +57,13 @@ class UsuarisPDO
         return $stm->fetch(\PDO::FETCH_ASSOC);
     }
 
-    public function add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $telefonreg, $passreg)
+    public function add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $passreg)
     {
-        $query = "insert into usuaris (dni, nom, cognom, correu, adreca, telefon, contrasenya) values 
-        (:dnireg, :nomreg, :cognomreg, :emailreg, :adrecareg, :telefonreg, :passreg);";
+        $query = "insert into usuaris (dni, nom, cognom, correu, adreca, contrasenya) values 
+        (:dnireg, :nomreg, :cognomreg, :emailreg, :adrecareg, :passreg);";
         $stm = $this->sql->prepare($query);
         $stm->execute([":dnireg" => $dnireg, ":nomreg" => $nomreg, ":cognomreg" => $cognomreg, ":emailreg" => $emailreg, 
-        ":adrecareg" => $adrecareg,":telefonreg" => $telefonreg, ":passreg" => $passreg]);
+        ":adrecareg" => $adrecareg, ":passreg" => $passreg]);
 
         if ($stm->errorCode() !== '00000') {
             $err = $stm->errorInfo();
@@ -74,7 +74,7 @@ class UsuarisPDO
 
     public function llistat()
     {
-        $query = "select dni, nom, cognom, correu, adreca, telefon, rol from usuaris;";
+        $query = "select dni, nom, cognom, correu, adreca from usuaris;";
         $llistatus = array();
         foreach ($this->sql->query($query, \PDO::FETCH_ASSOC) as $usuari) {
             $llistatus[$usuari["dni"]] = $usuari;

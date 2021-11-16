@@ -14,6 +14,7 @@ include "../src/controladors/habitacions.php";
 include "../src/controladors/admin.php";
 include "../src/controladors/llista.php";
 include "../src/controladors/adminEsborrar.php";
+include "../src/controladors/adminAfegir.php";
 
 include "../src/middleware/middleAdmin.php";
 
@@ -46,7 +47,9 @@ if ($r === "admin") {
     $resposta = ctrlLlista($peticio, $resposta, $contenidor);
 } elseif ($r === "delete") {
     $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
-}else {
+} elseif ($r === "afegir") {
+    $resposta = ctrlAfegir($peticio, $resposta, $contenidor);
+} else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 }
 
