@@ -49,7 +49,7 @@ include "../../cli/initPDO.php";
             <td>
               <a class="edit" href="#">Editar</a>
               |
-              <a class="delete" href="#">Eliminar</a>
+              <a class="delete" href="index.php?r=delete&amp;codi=<?php echo $actual["dni"]; ?>">Eliminar</a>
             </td>
           </tr>
           <?php } ?>

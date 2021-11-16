@@ -88,5 +88,19 @@ class UsuarisPDO
         return $llistatus;
     }
 
+
+    public function delete($id)
+    {
+        $query = 'delete from usuaris where dni=:dni;';
+        $stm = $this->sql->prepare($query);
+        $result = $stm->execute([':dni' => $id]);
+
+        if ($stm->errorCode() !== '00000') {
+            $err = $stm->errorInfo();
+            $code = $stm->errorCode();
+            die("Error.   {$err[0]} - {$err[1]}\n{$err[2]} $query");
+        }
+    }
+
   
 }
