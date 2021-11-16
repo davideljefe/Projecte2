@@ -13,6 +13,7 @@ include "../src/controladors/dologin.php";
 include "../src/controladors/habitacions.php";
 include "../src/controladors/admin.php";
 include "../src/controladors/llista.php";
+include "../src/controladors/adminEsborrar.php";
 
 include "../src/middleware/middleAdmin.php";
 
@@ -43,7 +44,9 @@ if ($r === "admin") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "llista") {
     $resposta = ctrlLlista($peticio, $resposta, $contenidor);
-}  else {
+} elseif ($r === "delete") {
+    $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
+}else {
     $resposta = ctrlError($peticio, $resposta, $contenidor);
 }
 

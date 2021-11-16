@@ -1,35 +1,17 @@
 <?php
-
-/**
-    * Controlador per esborrar imatges.
-    * Exemple per a M07.
-    * @author: Dani Prados dprados@cendrassos.net
-    *
-    * Carrega la imatge que toca i la visualitza
-    *
-**/
-
-/**
-  * ctrlEsborrar: Controlador que esborra imatges. Només de la base de dades!!!.
-  *
-  * @param $peticio contingut de la petició http.
-  * @param $resposta contingut de la resposta http.
-  * @param $imatges Model que encapsula les imatges.
-  *
-**/
 function ctrlEsborrar($peticio, $resposta, $contenidor)
 {
-    $imatges = $contenidor->imatges();
+    $usuari = $contenidor->usuaris();
     
-    $resposta->setSession("missatge", "Imatge esborrada èxit");
+    $resposta->setSession("missatge", "Usuari esborrat èxit");
 
     
-    $codi = $peticio->get(INPUT_GET, "codi");
+    $codi = $peticio->get(INPUT_GET, "dni");
 
     // No estic esborrant el fitxer, només la entrada a la base de dades
-    $imatges->delete($codi);
+    $usuari->delete($id);
 
-    $resposta->redirect("location: index.php?r=admin");
+    $resposta->redirect("location: index.php?r=llista");
 
     return $resposta;
 }
