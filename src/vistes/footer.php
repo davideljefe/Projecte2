@@ -5,7 +5,7 @@
       <div class="col-md-4 footer-col">
             <a href="index.php?r=quisom" style="color: white;"><h3>Sobre Nosaltres</h3></a>
             <div>
-              <p>Amb més de 5 anys d'experiència en el sector. Perquè disfrutis del teu allotjament al nostre costat .</p>
+              <p>Perquè disfrutis del teu allotjament al nostre costat.</p>
             </div>
         </div>
         <div class="col-md-4 footer-col">
