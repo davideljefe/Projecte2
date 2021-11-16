@@ -1,22 +1,6 @@
 <?php
 
-/**
-    * Controlador per actualitzar els títols de les imatges.
-    * Exemple per a M07.
-    * @author: Dani Prados dprados@cendrassos.net
-    *
-    * Carrega la imatge que toca i la visualitza
-    *
-**/
 
-/**
-  * ctrlActualitzar: Controlador que actualitza les imatges
-  *
-  * @param $peticio contingut de la petició http.
-  * @param $resposta contingut de la resposta http.
-  * @param $sessio Model que encapsula les imatges.
-  *
-**/
 function ctrlActualitzar($peticio, $resposta, $contenidor)
 {
     $imatges = $contenidor->imatges();

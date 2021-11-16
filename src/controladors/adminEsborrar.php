@@ -6,10 +6,12 @@ function ctrlEsborrar($peticio, $resposta, $contenidor)
     $resposta->setSession("missatge", "Usuari esborrat èxit");
 
     
-    $codi = $peticio->get(INPUT_GET, "dni");
+    $codi = $peticio->get(INPUT_GET, "codi");
 
     // No estic esborrant el fitxer, només la entrada a la base de dades
-    $usuari->delete($id);
+    $usuari->delete($codi);
+    echo $codi;
+    die();
 
     $resposta->redirect("location: index.php?r=llista");
 
