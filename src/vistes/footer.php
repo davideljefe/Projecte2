@@ -3,7 +3,7 @@
     <div class="container">
      <div class="row">
       <div class="col-md-4 footer-col">
-            <a href="index.php?r=quisom" style="color: white;"><h3>Sobre Nosaltres</h3></a>
+            <a href="index.php?r=quisom" style="color: white; text-decoration: none;"><h3>Sobre Nosaltres</h3></a>
             <div>
               <p>Perquè disfrutis del teu allotjament al nostre costat.</p>
             </div>

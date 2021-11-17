@@ -11,7 +11,7 @@
 		  
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 		<link type="text/css" rel="stylesheet" href="footer.css">
-		<title>Habitacions</title>
+		<title>HABITACIONS</title>
 
     </head>
 
@@ -26,9 +26,9 @@
 <div class="gen">
   <div class="card bg-dark text-white">
     <img src="img/1.jpg" class="card-img">
-    <div class="card-img-overlay">
+    <div class="card-img-overlay" style="color: black;">
       <h3 class="card-title"><b>Habitació 510</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 48m<sup>2</sup></li><li>Disponible per a dues persones</li><li>Llits separats</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 
@@ -36,15 +36,15 @@
     <img src="img/2.jpg" class="card-img">
     <div class="card-img-overlay">
       <h3 class="card-title"><b>Habitació 511</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 67m<sup>2</sup></li><li>Disponible per a una persona</li><li>Llit Individual</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 
   <div class="card bg-dark text-white">
     <img src="img/3.jpg" class="card-img">
-    <div class="card-img-overlay">
+    <div class="card-img-overlay" style="color: black;">
       <h3 class="card-title"><b>Habitació 512</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 48m<sup>2</sup></li><li>Disponible per a dues persones</li><li>Llits separats</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 
@@ -52,15 +52,15 @@
     <img src="img/4.jpg" class="card-img">
     <div class="card-img-overlay">
       <h3 class="card-title"><b>Habitació 513</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 67m<sup>2</sup></li><li>Disponible per a dues persones</li><li>Llits separats</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 
    <div class="card bg-dark text-white">
     <img src="img/5.jpg" class="card-img">
-    <div class="card-img-overlay">
+    <div class="card-img-overlay" style="color: black;">
       <h3 class="card-title"><b>Habitació 514</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 67m<sup>2</sup></li><li>Disponible per a dues persones</li><li>Llit de matrimoni</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 
@@ -68,13 +68,10 @@
     <img src="img/6.jpg" class="card-img">
     <div class="card-img-overlay">
       <h3 class="card-title"><b>Habitació 515</b></h3>
-      <p class="card-text"><b>Aquesta habitació té vistes al mar, és una de les millors que tenim actualment</b></p>
+      <p class="card-text"><b>Informació:<br><ul><li>Mida: 48m<sup>2</sup></li><li>Disponible per a dues persones</li><li>Llit de matrimoni</li><li>Vistes: Zona verda</li></ul></b></p>
     </div>
   </div>
 </div>
-
-
-
 
 
     <footer class="text-center footer-style">

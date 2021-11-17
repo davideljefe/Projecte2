@@ -21,87 +21,83 @@
           <?php include("header.php"); ?> 
         </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption d-none d-md-block">
-              <h2><b>Benvinguts a l'Hotel ABP</b></h2>
-              <p>Si busques un lloc per desconnectar has acertat.</p>
             </div>
-            <img src="img/6.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h2><b>Benvinguts a l'Hotel ABP</b></h2>
-              <p>Si busques un lloc per desconnectar has acertat.</p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>Benvinguts a l'Hotel ABP</b></h1>
+                  <p>El teu hotel de confiança amb els millor preus</p>
+                </div>
+                <img src="img/6.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>Benvinguts a l'Hotel ABP</b></h1>
+                  <p>El teu hotel de confiança amb els millor preus</p>
+                </div>
+                <img src="img/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1><b>Benvinguts a l'Hotel ABP</b></h1>
+                  <p>El teu hotel de confiança amb els millor preus</p>
+                </div>
+                <img src="img/3.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <img src="img/2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption d-none d-md-block">
-              <h2><b>Benvinguts a l'Hotel ABP</b></h2>
-              <p>Si busques un lloc per desconnectar has acertat.</p>
-            </div>
-            <img src="img/3.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    
 
-      <div class="card-group">
-        <div class="card">
-          <img src="img/3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <div style="margin-top: 15px; margin-left: 5px;">
+        <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h2>Reserva una habitació</h2></a>
+
+        <div class="card-group">
+          <div class="card">
+            <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><img src="img/3.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h5 class="card-title">Habitació 512</h5></a>
+            </div>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div class="card">
+            <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><img src="img/4.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h5 class="card-title">Habitació 513</h5></a>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="img/4.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/6.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Last updated 3 mins ago</small>
+          <div class="card">
+            <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><img src="img/6.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h5 class="card-title">Habitació 514</h5></a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div style="margin-top: 15px; margin-left: 5px;">
+        <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h2>Reserva una habitació</h2></a>
+
+        
+      </div>
       
-      <div  class="buttoncard">
-        <a href="#">Veure tots</a>
-      </div> 
     
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?>
     </footer>
 
-    </body>
+  </body>
 </html>
