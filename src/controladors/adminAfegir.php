@@ -11,6 +11,6 @@ function ctrlAfegir($peticio, $resposta, $contenidor)
 	$adrecareg = $peticio->get(INPUT_POST, "adrecareg");
 
 	$usuaris->add($dnireg, $nomreg, $cognomreg, $emailreg, $adrecareg, $passreg);
-  $resposta->SetTemplate("identificar.php");
+	$resposta->redirect("location: index.php?r=identificar");
 	
 }
