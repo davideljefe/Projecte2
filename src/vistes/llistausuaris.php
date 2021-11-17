@@ -12,7 +12,7 @@
       <link type="text/css" rel="stylesheet" href="footer.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
       
-      <title>Llista Usuaris</title>
+      <title>LLISTAT D'USUARIS</title>
     </head>
 
     <body>

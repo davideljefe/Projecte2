@@ -15,7 +15,7 @@
     </head>
 
 <body>
-	
+	<span class="up-button icon-arrow-up2"></span>
 	<header>  
 		<?php include("../src/vistes/header.php")?>
     </header>
@@ -30,7 +30,7 @@
 
 <div style="text-align: center; margin-bottom: 50px">
 <h3 style="margin-bottom: 20px;">On trobar-nos?</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.2255688067917!2d2.962496514957594!3d42.27370804854392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba8dd91251e3ff%3A0xe8dfb11cd9cdef78!2sInstitut%20Cendrassos!5e0!3m2!1ses!2ses!4v1636394894652!5m2!1ses!2ses" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.2255688067917!2d2.962496514957594!3d42.27370804854392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ba8dd91251e3ff%3A0xe8dfb11cd9cdef78!2sInstitut%20Cendrassos!5e0!3m2!1ses!2ses!4v1636394894652!5m2!1ses!2ses" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 
 <div style="text-align: center; margin-bottom: 50px">
