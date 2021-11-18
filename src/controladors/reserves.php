@@ -1,31 +1,25 @@
 <?php
 
-/**
-    * Controlador de la portada.
-    * Exemple per a M07.
-    * @author: Dani Prados dprados@cendrassos.net
-    *
-    * Carrega la imatge que toca i la visualitza
-    *
-**/
-
-/**
-  * ctrlPortada: Controlador que carrega les tasques i visaulitza la portada
-  *
-  * @param $peticio contingut de la petició http.
-  * @param $resposta contingut de la resposta http.
-  *
-**/
 function ctrlReserves($peticio, $resposta, $contenidor)
 {
+  $usuari = $peticio->get(INPUT_POST, "user");
+    $pass = $peticio->get(INPUT_POST, "pass");
 
-    $identificar = $peticio->get("SESSION", "identificar");
-    $logat = $peticio->get("SESSION", "logat");
+    $usuaris = new \Daw\UsuarisPDO($contenidor->config["db"]);;
 
-    $resposta->set("logat", $logat);
-    $resposta->set("identificar", $identificar);
+    $actual = $usuaris->getUser($usuari);
 
-    $resposta->SetTemplate("reserves.php");
+    if($actual && $actual["contrasenya"] === $pass) {
+        $resposta->setSession("logat", true);
+        $resposta->setSession("identificar", $actual);
+        $resposta->SetTemplate("reserves.php");
+    } else {
+        $resposta->setSession("logat", false);
+        $resposta->redirect("location: index.php?r=identificar");
+       // $resposta->;
+    }
 
+    
+    
     return $resposta;
 }
