@@ -15,46 +15,49 @@
     </head>
 
     <body>
+    
     <?php include("header.php"); ?>
-    <div class="container">
-    <div class="row mt-5 mb-4">
-        <div class="col"><h1>REGISTRA'T</h1></div>
-      </div>
-      <div class="row justify-content-md-center">
-      <div class="col-4  p-3">
+      
+<div class="container">
+  <div class="row mt-5 mb-4">
+    <div class="col"><h1>REGISTRA'T</h1></div>
+  </div>
+    <div class="row justify-content-md-center">
+    <div class="col-4  p-3">
       <form method="POST" class="row g-3" action="index.php" >
-      <input name="r" type="hidden" value="afegir">
-      <div class="col-md-6">
-    <label for="inputnom" class="form-label">Nom</label>
-    <input type="text" class="form-control" id="inputnom" name="nomreg">
-  </div>
-  <div class="col-md-6">
-    <label for="inputcognom" class="form-label">Cognom</label>
-    <input type="text" class="form-control" id="inputcognom" name="cognomreg">
-  </div>
-  <div class="col-md-6">
-    <label for="inputdni" class="form-label">DNI</label>
-    <input type="text" class="form-control" placeholder="Ex. 12345678H" id="inputdni" name="dnireg">
-  </div>
-  <div class="col-md-6">
-    <label for="inputEmail" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail" name="emailreg">
-  </div>
-  <div class="col-md-12">
-    <label for="inputPassword" class="form-label">Contrasenya</label>
-    <input type="password" class="form-control" id="inputPassword" name="passreg">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Adreça</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg">
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Registrar-se</button>
-  </div>
-</form>
-      </div>
+        <input name="r" type="hidden" value="afegir">
+          <div class="col-md-6">
+            <label for="inputnom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="inputnom" name="nomreg">
+          </div>
+          <div class="col-md-6">
+            <label for="inputcognom" class="form-label">Cognom</label>
+            <input type="text" class="form-control" id="inputcognom" name="cognomreg">
+          </div>
+          <div class="col-md-6">
+            <label for="inputdni" class="form-label">DNI</label>
+            <input type="text" class="form-control" placeholder="Ex. 12345678H" id="inputdni" name="dnireg">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" name="emailreg">
+          </div>
+          <div class="col-md-12">
+            <label for="inputPassword" class="form-label">Contrasenya</label>
+            <input type="password" class="form-control" id="inputPassword" name="passreg">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Adreça</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="C/ Cendrassos 8, 1A" name="adrecareg">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Registrar-se</button>
+          </div>
+      </form>
     </div>
-    </div>
+  </div>
+</div>
+
 <footer>
   <?php include("footer.php"); ?>
 </footer>
