@@ -12,6 +12,10 @@
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      <link rel="stylesheet" href="fonts.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <link rel="stylesheet" href="index.css">
+      <script src="boto.js"></script>
       
       <title>Reserves</title>
       <script>
@@ -25,6 +29,9 @@
     <header>
         <?php include("header.php"); ?> 
     </header>
+
+    <span class="up-button icon-arrow-up2"></span>
+    <section class="contingut">
     <div class="col-9">
           </div>
     <div class="container">
@@ -48,7 +55,7 @@
           </div>
         </div>
     </div>
-
+</section>
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?> 
     </footer>

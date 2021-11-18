@@ -1,0 +1,58 @@
+.contact_form{  
+  width: 480px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+
+input{
+  width: 428px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  width: 425px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  margin-bottom: 10px; 
+  margin-top: 10px;   
+  border-style: solid; 
+  border-radius: 10px;
+  width: 440px;   
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
+
+.aviso{
+  font-size: 15px;  
+  color: #0e0e0e;  
+}
