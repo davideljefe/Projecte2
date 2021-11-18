@@ -11,12 +11,17 @@
 
       <link type="text/css" rel="stylesheet" href="footer.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="fonts.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="boto.js"></script>
       
       <title>LLISTAT D'USUARIS</title>
     </head>
 
     <body>
     <?php include("header.php"); ?>
+    <span class="up-button icon-arrow-up2"></span>
+    <section class="contingut">
     <div class="container">
     <div class="row mt-5 mb-4">
         <div class="col"><h1>LLISTA DELS USUARIS</h1></div>
@@ -54,6 +59,8 @@
       <?php } ?>
       </div>
     </div>
+
+  </section>
 <footer>
   <?php include("footer.php"); ?>
 </footer>

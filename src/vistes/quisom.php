@@ -5,21 +5,28 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		  
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
 		<link type="text/css" rel="stylesheet" href="footer.css">
+    <link type="text/css" rel="stylesheet" href="quisom.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="boto.js"></script>
+
 		<title>SOBRE NOSALTRES</title>
 
     </head>
 
 <body>
-	<span class="up-button icon-arrow-up2"></span>
 	<header>  
 		<?php include("../src/vistes/header.php")?>
     </header>
 <br>
+
+<span class="up-button icon-arrow-up2"></span>
+<section class="contingut">
 
 <h1 style="margin-left: 15px;">QUI SÓM</h1>
 
@@ -36,7 +43,63 @@
 <div style="text-align: center; margin-bottom: 50px">
 <h3 style="margin-bottom: 20px;">Contacta</h3>
 
+<div class="contact_form">
+  <h5>Escriu-nos i ens posarem en contacte el més aviat possible!</h5>
+    <div class="formulario">      
 
+          <form action="submeter-formulario.php" method="post">       
+
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nom.
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escriu el teu nom">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Correu.
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escriu el teu correu">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Telèfon.
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escriu el teu telèfon">
+                </p>    
+              
+                <p>
+                  <label for="website" class="colocar_website">LLoc Web.
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escriu la URL de la teva Web">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asumpte.
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escriu u assumpte">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Missatge.
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deixa el teu comentari..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>Els camps són obligatoris.
+                </p>          
+            
+          </form>
+    </div>  
+  </div>
+</div>
+</section>
 <footer class="text-center footer-style">
 	<?php include("../src/vistes/footer.php"); ?>
 </footer>

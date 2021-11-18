@@ -11,6 +11,9 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="fonts.css">
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="boto.js"></script>
       
       <title>HOTEL ABP</title>
     </head>
@@ -20,7 +23,8 @@
         <header>  
           <?php include("header.php"); ?> 
         </header>
-
+<span class="up-button icon-arrow-up2"></span>
+    <section class="contingut">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -94,7 +98,7 @@
         
       </div>
       
-    
+    </section>
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?>
     </footer>
