@@ -24,17 +24,19 @@ $r = $_REQUEST["r"];
 $contenidor = new Emeset\Contenidor($config);
 $resposta = $contenidor->resposta();
 $peticio = $contenidor->peticio();
+$logat = $peticio->get("SESSION", "logat");
+$resposta->set("logat", $logat);
 
 if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
-}elseif ($r == "") {
+} elseif ($r === "reserves") {
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlReserves");
+} elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "dologin") {
     $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
 } elseif ($r === "identificar") {
     $resposta = ctrlIdentificar($peticio, $resposta, $contenidor);
-} elseif ($r === "reserves") {
-    $resposta = ctrlReserves($peticio, $resposta, $contenidor);
 } elseif ($r === "registrar") {
     $resposta = ctrlRegistrar($peticio, $resposta, $contenidor);
 }elseif ($r === "quisom") {

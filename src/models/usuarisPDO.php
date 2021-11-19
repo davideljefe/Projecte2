@@ -10,9 +10,6 @@
 
 namespace Daw;
 
-/**
- * Imatges
-*/
 class UsuarisPDO
 {
 
