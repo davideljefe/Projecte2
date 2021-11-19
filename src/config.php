@@ -9,10 +9,6 @@ $config["db"]["pass"] = 'daw-2020';
 $config["db"]["dbname"] = 'hotelabp_db';
 $config["db"]["host"] = 'localhost';
 
-/* Path on guardarem el fitxer sqlite */
-$config["sqlite"]["path"] = '../';
-$config["sqlite"]["name"] = 'galeria.sqlite';
-
 require_once "../src/emeset/peticio.php";
 require_once "../src/emeset/resposta.php";
 require_once "../src/emeset/contenidor.php";
