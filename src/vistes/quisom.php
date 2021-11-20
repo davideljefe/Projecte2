@@ -23,13 +23,9 @@
 	<header>  
 		<?php include("../src/vistes/header.php")?>
     </header>
-<br>
-
 <span class="up-button icon-arrow-up2"></span>
 <section class="contingut">
-
-<h1 style="margin-left: 15px;">QUI SÓM</h1>
-
+<div class="contenttitol"><h1 class="titol">QUI SOM?</h1></div>
 <br>
 
 <p style="margin-right: 15px; text-align: justify; margin-left: 15px;">ABP és grup d'estudiants amb una idea de negoci format al 20121. Hem aconseguit obrir un hotel de tres estrelles situat a Figueres, la capital de l'Alt Empordà. En el nostre hotel hi podreu trobar allotjament per un preu econòmic durant totes les èpoques de l'any. El grup ABP sóm un projecte que acaba de néixer i amb molts plans de futur, però per ara només tenim aquest hotel però al nostra idea és expandir-nos a altres pobles i ciutats de Catalunya.</p>
@@ -67,14 +63,7 @@
                   <label for="telefone" class="colocar_telefono">Telèfon.
                   </label>
                     <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escriu el teu telèfon">
-                </p>    
-              
-                <p>
-                  <label for="website" class="colocar_website">LLoc Web.
-                  </label>
-                    <input type="url" name="introducir_website" id="website" placeholder="Escriu la URL de la teva Web">
-                </p>    
-              
+                </p>
                 <p>
                   <label for="asunto" class="colocar_asunto">Asumpte.
                     <span class="obligatorio">*</span>

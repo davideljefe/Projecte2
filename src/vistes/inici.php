@@ -67,9 +67,8 @@
         </div>
     
 
-      <div style="margin-top: 15px; margin-left: 5px;">
-        <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h2>Reserva una habitació</h2></a>
-
+      <div style="margin-top: 0px; margin-left: 0px; background-color: #3d3742;">
+        <div class="contenttitol"><a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h3 class="subtitol">RESERVA UNA HABITACIÓ</h3></a></div>
         <div class="card-group">
           <div class="card">
             <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><img src="img/3.jpg" class="card-img-top" alt="..."></a>
@@ -91,13 +90,6 @@
           </div>
         </div>
       </div>
-
-      <div style="margin-top: 15px; margin-left: 5px;">
-        <a href="index.php?r=reserves" style="color: black; text-decoration: none;"><h2>Reserva una habitació</h2></a>
-
-        
-      </div>
-      
     </section>
     <footer class="text-center footer-style">
         <?php include("footer.php"); ?>

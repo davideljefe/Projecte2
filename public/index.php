@@ -46,7 +46,7 @@ if ($r === "admin") {
 } elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "llista") {
-    $resposta = ctrlLlista($peticio, $resposta, $contenidor);
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLlista");
 } elseif ($r === "delete") {
     $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
 } elseif ($r === "afegir") {

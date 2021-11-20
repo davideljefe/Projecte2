@@ -34,13 +34,23 @@ table td{
 
 .gen{
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 15px;
 }
 
 .titol{
-  margin-top: 15px;
   margin-left: 15px;
+  color: white;
+  padding-top: 12px;
+}
+.subtitol{
+  margin-left: 15px;
+  color: white;
+  padding-top: 15px;
+}
+.contenttitol{
+  margin-left: 0px;
+  margin-top: 0px;
+  background-color: #3d3742;
+  height: 80px;
 }
 
 .jumbotron {

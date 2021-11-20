@@ -31,7 +31,7 @@
 
 	<section class="contingut">
 
-<h1 class="titol">LES NOSTRES HABITACIONS</h1>
+<div class="contenttitol"><h1 class="titol">LES NOSTRES HABITACIONS</h1></div>
 
   <div class="gen">
     <div class="card bg-dark text-white">

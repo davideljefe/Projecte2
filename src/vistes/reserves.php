@@ -32,6 +32,7 @@
 
     <span class="up-button icon-arrow-up2"></span>
     <section class="contingut">
+    <div class="contenttitol"><h1 class="titol">RESERVES</h1></div>
     <div class="col-9">
           </div>
     <div class="container">
