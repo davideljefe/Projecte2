@@ -9,21 +9,20 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
       <link type="text/css" rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="index.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
       
       <title>INICIAR SESSIÓ</title>
     </head>
 
     <body>
-      
-<?php include("header.php"); ?>
+      <header><?php include("header.php"); ?></header>
 
+<div class="contenttitol"><h1 class="titol">INICIA SESSIÓ</h1></div>
 <div class="container">
-        <div class="row mt-5 mb-4">
-            <div class="col"><h1>INICIA SESSIÓ</h1></div>
-        </div>
     <div class="row justify-content-md-center">
         <div class="col-4  p-3">
+        <div class="col-md-12"><h4>INICIA SESSIÓ</h4></div>
             <form action="index.php" method="POST">
                 <input name="r" type="hidden" value="dologin">
                   <div class="mb-3">

@@ -22,10 +22,9 @@
     <?php include("header.php"); ?>
     <span class="up-button icon-arrow-up2"></span>
     <section class="contingut">
+    <div class="contenttitol"><h1 class="titol">LLISTA D'USUARIS</h1></div>
     <div class="container">
     <div class="row mt-5 mb-4">
-        <div class="col"><h1>LLISTA DELS USUARIS</h1></div>
-      </div>
       <div>
       <?php
           if (count($llistatUsuaris) > 0) {
