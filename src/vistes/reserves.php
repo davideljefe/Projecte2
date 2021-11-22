@@ -39,7 +39,7 @@
           <div style="margin-top: 10px;" class="col">
               <p><?=$missatge?></p>
               <hr>
-              <p>Benvingut a l'apartat de reserves</p>
+              <p>Hola <?=ucfirst($identificar["nom"]); ?> estàs a la pàgina de reserves</h1></p>
           </div>
 
         <div class="row mt-5 mb-4">

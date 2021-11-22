@@ -7,7 +7,7 @@ $config["db"] = array();
 $config["db"]["user"] = 'galeria_daw';
 $config["db"]["pass"] = 'daw2020';
 $config["db"]["dbname"] = 'galeria_daw';
-$config["db"]["host"] = 'localhost'
+$config["db"]["host"] = 'localhost';
 
 /* Path on guardarem el fitxer sqlite */
 $config["sqlite"]["path"] = '../';
