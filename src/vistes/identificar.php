@@ -41,8 +41,8 @@
 </div>
 
 <?php if (isset($error) && $error != "") {?>
-    <div class="alert alert-danger" role="alert">
-          <?=$error;?>
+    <div style="text-align: center;" class="alert alert-danger" role="alert">
+            Has introduït malament l'usuari o la contrasenya.
     </div>
 <?php }?>
 

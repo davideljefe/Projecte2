@@ -29,6 +29,8 @@ $resposta->set("logat", $logat);
 
 if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
+} elseif ($r === "llista") {
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLlista");
 } elseif ($r === "reserves") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlReserves");
 } elseif ($r == "") {
@@ -45,8 +47,6 @@ if ($r === "admin") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 } elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
-} elseif ($r === "llista") {
-    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLlista");
 } elseif ($r === "delete") {
     $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
 } elseif ($r === "afegir") {

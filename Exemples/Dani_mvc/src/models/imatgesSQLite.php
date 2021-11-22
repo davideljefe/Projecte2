@@ -38,16 +38,16 @@ class ImatgesSQLite
      * @param int $id
      * @return array imatge amb ["titol", "url"]
      */
-    public function get($id)
+   /* public function get($id)
     {
         $query = $this->sql->prepare('select id, titol, url_imatge as url from galeria where id=:id;');
-        $query->bindValue(':id', $id, SQLITE3_INTEGER);
+       // $query->bindValue(':id', $id, SQLITE3_INTEGER);
         $result = $query->execute();
         $imatge = $result->fetchArray(SQLITE3_ASSOC);
         //print_r($imatge);
         return $imatge;
     }
-
+*/
     /**
      * afegeix una imatge a la base de dades
      *
@@ -98,7 +98,7 @@ class ImatgesSQLite
      *
      * @return array d'imatges amb ["titol", "url"]
      */
-    public function llistat()
+  /*  public function llistat()
     {
         $result = $this->sql->query("select id, titol, url_imatge as url from galeria;");
         $imatges = array();
@@ -108,7 +108,7 @@ class ImatgesSQLite
         //print_r($imatges);
         return $imatges;
     }
-
+*/
     /**
      * cerca les imatges que tenen el text $cerca al titol
      *

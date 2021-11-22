@@ -8,7 +8,7 @@ function ctrldoLogin($peticio, $resposta, $contenidor)
     $usuaris = new \Daw\UsuarisPDO($contenidor->config["db"]);;
 
     $actual = $usuaris->getUser($usuari);
-
+    
     if($actual && $actual["contrasenya"] === $pass) {
         $resposta->setSession("logat", true);
         $resposta->setSession("identificar", $actual);
@@ -16,8 +16,6 @@ function ctrldoLogin($peticio, $resposta, $contenidor)
     } else {
         $resposta->setSession("logat", false);
         $resposta->redirect("location: index.php?r=identificar");
-       // $resposta->;
     }
-
     return $resposta;
 }

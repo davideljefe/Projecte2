@@ -32,9 +32,9 @@ function ctrlPortada($peticio, $resposta, $contenidor)
         // Si no tenim un codi d'imatge al $_GET llegim la cookie
         $imatge = $peticio->get(INPUT_COOKIE, "imatge");
     }
-    $imatgeActual = $imatges->get($imatge);
+   // $imatgeActual = $imatges->get($imatge);
     
-    $llistatImatges = $imatges->llistat();
+   // $llistatImatges = $imatges->llistat();
     $resposta->set("imatgeActual", $imatgeActual);
     $resposta->set("llistatImatges", $llistatImatges);
     $resposta->set("imatge", $imatge);
