@@ -32,11 +32,7 @@ if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
 } elseif ($r === "llista") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLlista");
-<<<<<<< HEAD
-} elseif ($r === "reserves") {
-=======
 }elseif ($r === "reserves") {
->>>>>>> feature34
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlReserves");
 } elseif ($r === "logout") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLogout");
@@ -54,11 +50,7 @@ if ($r === "admin") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 } elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
-<<<<<<< HEAD
-} elseif ($r === "delete") {
-=======
 }  elseif ($r === "delete") {
->>>>>>> feature34
     $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
 } elseif ($r === "afegir") {
     $resposta = ctrlAfegir($peticio, $resposta, $contenidor);
