@@ -17,10 +17,11 @@
                 <a class="nav-link" href="index.php?r=quisom">Qui Sóm?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.php?r=llista">Llista</a>
+              <?php if($logat){?><a class="nav-link" href="index.php?r=llista">Llista</a><?php }?>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="index.php?r=identificar">Login</a>
+              <?php if($logat){?><a class="nav-link" href="index.php?r=logout">Logout</a><?php } 
+              else{?><a class="nav-link" href="index.php?r=identificar">Login</a><?php } ?>
               <li class="nav-item">
                 <a class="nav-link" href="index.php?r=registrar">Registrar-se</a>
               </li>

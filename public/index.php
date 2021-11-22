@@ -15,6 +15,7 @@ include "../src/controladors/admin.php";
 include "../src/controladors/llista.php";
 include "../src/controladors/adminEsborrar.php";
 include "../src/controladors/adminAfegir.php";
+include "../src/controladors/logout.php";
 
 include "../src/middleware/middleAdmin.php";
 
@@ -31,9 +32,15 @@ if ($r === "admin") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlAdmin");
 } elseif ($r === "llista") {
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLlista");
+<<<<<<< HEAD
 } elseif ($r === "reserves") {
+=======
+}elseif ($r === "reserves") {
+>>>>>>> feature34
     $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlReserves");
-} elseif ($r == "") {
+} elseif ($r === "logout") {
+    $resposta = middleAdmin($peticio, $resposta, $contenidor, "ctrlLogout");
+}elseif ($r == "") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
 } elseif ($r === "dologin") {
     $resposta = ctrldoLogin($peticio, $resposta, $contenidor);
@@ -47,7 +54,11 @@ if ($r === "admin") {
     $resposta = ctrlHabitacions($peticio, $resposta, $contenidor);
 } elseif ($r === "inici") {
     $resposta = ctrlInici($peticio, $resposta, $contenidor);
+<<<<<<< HEAD
 } elseif ($r === "delete") {
+=======
+}  elseif ($r === "delete") {
+>>>>>>> feature34
     $resposta = ctrlEsborrar($peticio, $resposta, $contenidor);
 } elseif ($r === "afegir") {
     $resposta = ctrlAfegir($peticio, $resposta, $contenidor);

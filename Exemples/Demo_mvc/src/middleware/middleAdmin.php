@@ -22,7 +22,6 @@ function middleAdmin($peticio, $resposta, $contenidor, $next)
     $logat = $peticio->get("SESSION", "logat");
    
 
-    /* Validem que nom i cognom estan definits */
     if (!$logat) {
         $resposta->setSession("error", "Has intentat accedir a la pàgina sense identificar-te!!!!!!\n");
         $resposta->redirect("Location:index.php?r=login");
